@@ -1,0 +1,165 @@
+/* Color Set*/
+.c-main{
+    color: #0076bd;
+}
+
+.c-sub{
+    color: #00a95e;
+}
+
+.c-text{
+   color:#00adee; 
+}
+
+:root{
+    --main-color: #0076bd;
+    --sub-color:#00a95e;
+    --text-color: #00adee;
+}
+
+
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.main.container {
+    margin-top: 7em;
+}
+
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Sans KR", Georgia, "Times New Roman", serif;
+}
+
+.nav-scroller {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+a {
+    color:black;
+}
+
+a:hover {
+   
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+}
+
+a.nav-link:hover {
+     text-decoration: underline;
+    color: rgba(var(--text-color), 0.5);
+  text-decoration-color: rgba(var(--text-color), 0.5);
+}
+
+.dropdown-menu[style] {
+    left: auto!important;
+}
+
+
+.full-height {
+    height: 100%;
+}
+
+/* INDEX */
+
+
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item>img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    
+    min-width: 100%;
+    
+}
+.carousel-control-next, .carousel-control-prev {
+    color: black;
+    opacity: 1;
+}
+
+.carousel-indicators li {
+    background-color: gray;
+}
+
+.table>:not(:last-child)>:last-child>*{
+    border-bottom: .2em solid var(--main-color);
+}
+.table thead th{
+    border-bottom: .2em solid var(--main-color);
+}
+.table{
+    
+}
+@media only screen and (max-width: 992px) {
+
+    
+    
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+::selection {
+    
+    border: 1px solid var(--sub-color)
+}
+
+.ui.button.items {
+    height: 30vh;
+    line-height: 5rem;
+    background: whitesmoke;
+    border-radius: 2rem;
+}
+
+.ui.button.items:hover {
+    background: var(--main-color);
+}
+
+
+
+.mobile-nav {
+    height:4rem;
+    position: fixed;
+   margin:0;
+    width: 100%; 
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    color: var(--main-color);
+    text-align: center;
+ }
+ .mobile-nav i{
+     font-size:2rem;
+ }
