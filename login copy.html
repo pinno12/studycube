@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="독서실">
+        <meta name="author" content="스터디큐브">
+        <meta name="generator" content="Jekyll v4.1.1">
+        <meta property="og:title" content="스터디큐브 독서실">
+        <meta property="og:description" content="집중이 잘 되는 시간">
+        <meta property="og:image" content="images/thumbnail.png">
+        <title>스터디큐브 독서실 예약</title>
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&amp;family=Noto+Sans+KR:wght@100;400;700&amp;display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+     
+        <!-- 애플지도 -->
+        <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+        
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+        <!-- 독서실 스타일-->
+        <link rel="stylesheet" href="./style.css">
+
+
+       
+    </head>
+    
+
+<body class="d-flex flex-column h-100 ">
+<header class = "mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
+        <div class="container">
+          <a class="navbar-brand mx-auto" href="index.html">        
+                <img src = "images/logo.png" style="height:2.5rem;" >     
+          </a>
+          <!-- <button class="navbar-toggler collapsed d-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>     -->
+          <div class="navbar-collapse collapse" id="navbarsExample07" >
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"  href="#"><i class = "qrcode icon"></i>스마트키</a>        
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class = "list alternate outline icon"></i>이용 내역 </a>
+                </li>
+
+           <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class = "user outline icon"></i>박청이</a>
+                </li>
+                
+
+              <li class="nav-item  dropdown">
+                <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown"
+                    aria-expanded="false" href="#">
+                    로그인
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
+                    style="right: 0 !important;width: 24rem;">
+            
+                    <form class="ui form my-3 mx-3">
+                        <div class="field">
+                            <label class="float-left">전화번호</label>
+                            <input type="text" name="first-name" placeholder="">
+                        </div>
+                        <div class="field">
+                            <label class="float-left">비밀 번호</label>
+                            <input type="text" name="last-name" placeholder="">
+                        </div>
+            
+                        <button class="ui yellow button " type="submit">로그인</button> <br>
+                    
+                        <div class="ul list text-center"
+                            style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                            <a href="./join.html">회원 가입</a><br>
+                            <a href="./findpwd.html">ID/비밀번호 찾기</a>
+                        </div>
+                    </form>
+                </ul>
+            </li>
+            </ul>
+         
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+     
+
+    <main role="main" class="flex-shrink-0 mt-5">
+      <div class="container" style="margin-top: 12vh;">
+          <div class="row row justify-content-md-end">
+              <div class=" col-lg-6">
+                  <h1 class="ui header ">
+                      회원가입
+                  </h1>
+                  <div class="ui divider"></div>
+              </div>
+          </div>
+          <div class="mt-1 row justify-content-md-end ">
+              <div class=" col-lg-6 text-center">
+                  <img src="images/join2.png" style="width:80%;">
+              </div>
+              <div class=" col-lg-6 ">
+                  <form class="needs-validation" novalidate>
+                      <div class="form-group row">
+                          <label for="validationCustom01" class="col-sm-4 col-form-label">이름</label>
+                          <div class="col-sm-8">
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="이름"
+                                  required />
+                              <div class="invalid-feedback">
+                                  회원님의 존함을 입력해주세요.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="email" class="col-sm-4 col-form-label">이메일 아이디</label>
+                          <div class="input-group col-sm-8">
+                              <input id="email" type="text" class="form-control" placeholder="이메일 주소"
+                                  aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                              <div class="invalid-feedback">
+                                  e-mail ID
+                              </div>
+                          </div>
+                          <!-- 이메일 입력했을 때 자동으로 중복 확인 -->
+                      </div>
+                      <div class="form-group row">
+                          <label for="validationCustom01" class="col-sm-4 col-form-label">비밀번호</label>
+                          <div class="col-sm-8">
+                              <input type="text" class="form-control" id="validationCustom01"
+                                  placeholder="비밀번호는 영문/숫자/특수문자를 조합 8자 이상" required />
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="pw" class="col-sm-4 col-form-label">비밀번호 다시 입력</label>
+                          <div class="input-group col-sm-8">
+                              <input id="pw" type="text" class="form-control" placeholder="비밀번호를 재입력"
+                                  aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                          </div>
+                      </div>
+                      <div class="ui checkbox" style="display: block;">
+                          <input type="checkbox" name="example" checked>
+                          <label class="text-muted">개인정보 수집 및 활용 동의 <a href="#" data-toggle="modal"
+                                  data-target="#myModal">[자세히 보기]</a></label>
+                      </div>
+                      <div class="ui checkbox" style="display: block;">
+                          <input type="checkbox" name="example" checked>
+                          <label class="text-muted">마케팅 정보 수신 동의 <a href="#" data-toggle="modal"
+                                  data-target="#marketing-modal">[자세히 보기]</a></label>
+                      </div>
+                      <button class="ui button mt-4 bg-e" style="width:25%" type="submit">
+                          회원가입
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+
+      
+      <div class="row justify-content-md-center my-5">
+
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">개인정보 수집 및 활용 동의</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                          1. 개인정보의 수집 및 이용 목적<br />  ① 서비스 이용에 따른 본인 식별, 실명확인, 가입의사 확인 이용<br /> ② 고지사항 전달, 불만 사항의 의사소통
+                          경로 확보<br /> ③ 신규서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료 <br /> ④ 문의사항에 대한 정확한 답변 <br /> ⑤ 불량 회원
+                          부정이용 방지 및 비인가 사용방지 <br /> ⑥ 기타 원활한 양질의 서비스
+                          제공 등 <br /> 2. 수집하는 개인정보의 항목<br /> ①성명, 연락처, 이메일 및 그 외 선택 정보<br /> 3.개인정보의 보유 및 이용기간<br /> ①
+                          원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체없이 파기합니다. <br /> ② 전자상거래에서의 소비자보호에 관한 법률 등 타 법률에 의해 보존할 필요가
+                          있는 경우에는 아래와 같이 일정기간 보존합니다.
+                          <br /> 가. 계약 또는 청약철회 등에 관한 기록 - 보존 이유 : 전자상거래 등에서의 소비자 보호에 관한 법률 – 보존 기간 : 5년 <br /> 나. 대금결제
+                          및 재화 등의 공급에 관한 기록 - 보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률 - 보존 기간 : 5년 <br /> 다. 소비자의 불만 또는 분쟁 처리에
+                          관한 기록 - 보존 이유 : 전자상거래 등에서의 소비자보호 에 관한
+                          법률 - 보존 기간 : 3년 <br /> 라. 본인 확인에 관한 기록 - 보존 이유 : 정보통신 이용촉진 및 정보보호 등에 관한 법률 – 보 존 기간 : 6개월
+                          <br /> 마. 방문에 관한 기록 - 보존 이유 : 통신비밀보호법 - 보존 기간 : 3개월 <br /> 4. 개인정보의 제공에 관한 사항<br /> ①
+                          개인(신용)정보를 제공받는 자 - 제휴 상품 및 이벤트, 서비스 소개와 관련된 업무를
+                          위탁 받은 자 - 귀사 및 제휴사의 상품·서비스 소개 등 아래 이용목적과 관련한 제휴사 및 업무를 위탁 받은 자 <br /> ② 개인정보 이용목적 - 귀사 및
+                          제휴사의 상품·서비스 안내 및 이용 권유, 고객 만족도조사, 회 원 유치 시장조사 및 상품 서비스 개발연구 등 – 회원 유치, 통신판매, 및 실사 업무 등
+                          <br /> ③ 제공 대상 개인정보 : 본인 성명, 본인 연락처
+                          <br /> ④ 제공받는 자의 개인정보 보유 및 이용기간: 제공 동의일로부터 개인정보의 제공 목적을 달성 할 때까지 <br /> ※ 위 사항에 대한 동의를 거부할 수
+                          있으나 이에 대한 동의가 없을 경우 유료 서비스 관련 다양 한 편의를 제공 받는데 제한이 있을 수 있습니다. <br />
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn bg-e" data-dismiss="modal">닫기</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- The Modal -->
+          <div class="modal" id="marketing-modal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">마케팅 정보 수신 동의 </h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                          (주)이글레오TF는 개인정보보호법, 정보통신망이용촉진 및 정보 보호에 관한 법률 등 관계법령 에 따라 광고성 정보를 전송하기 위해 수신자의 사전 수신 동의를 받고
+                          있으며, 광고성 정보 수신자의 수신동의여부를 정기적으로 확인합니다.
+                          <li>전송 방법</li>
+                          고객님의 모바일 App Push, SMS, 전화 등을 통해 전달될 수 있습니다.
+                          <li>전송내용</li>
+                          발송되는 마케팅 정보는 수신자에게 제공하는 혜택 정보, 각종 이벤트 정보 등 광고성 정보로 관련 법의 규정을 준수하여 발송됩니다. 단, 광고성 정보 이외 의무적으로
+                          안내 되어야 하는 정보성 내용은 수신 동의 여부와 무관하게 제공됩니다.
+                          <li>철회 안내</li>
+                          고객님은 수신 동의 이후에라도 의사에 따라 동의를 철회할 수 있으며, 수신을 동의하지 않아도 회사가 제공하는 기본적인 서비스를 이용할 수 있으나, 당사의 마케팅
+                          정보를 수신하지 못할 수 있습니다.
+                          <li>수신 동의 변경</li>
+                          (주)이글레오FT 고객센터(이메일: egleo2018@gmail.com)을 통해 수신 동의를 변경(동의/철회) 할 수 있습니다.
+
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn bg-e" data-dismiss="modal">닫기</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+  </main>
+
+    <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top ">
+        <div class = "row mt-4">
+            <div class = "col">
+                <i class = "coffee icon"></i>
+            </div>
+            <div class = "col">
+            <i class = "list alternate outline icon"></i>
+        </div>
+        <div class = "col">
+            <i class = "user outline icon"></i>
+        </div>
+        <div class = "col">
+            <i class = "qrcode icon"></i>
+        </div>
+        </div>
+
+    </nav>
+
+    <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
+        <div class="ui container">
+            <div class="row text-center">
+                <div class="container-fluid">
+                    <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Kakao Map -->
+   
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d9023b7fdde1125047074283e2b4ddf8"></script> -->
+    <!-- <script>
+        var container = document.getElementById('map');
+        var options = {
+          center: new kakao.maps.LatLng(33.450701, 126.570667),
+          level: 3
+        };
+        
+        var map = new kakao.maps.Map(container, options);
+        
+        
+            </script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+</html>

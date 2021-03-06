@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="독서실">
+  <meta name="author" content="스터디큐브">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <meta property="og:title" content="스터디큐브 독서실">
+  <meta property="og:description" content="집중이 잘 되는 시간">
+  <meta property="og:image" content="images/thumbnail.png">
+  <!-- To be customized "회원가입" + '|' + 가맹점이름" -->
+  <title>회원 가입 | 스터디큐브</title> 
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&amp;family=Noto+Sans+KR:wght@100;400;700&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+  <!-- 애플지도 -->
+  <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.png">
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- 독서실 스타일-->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body class="d-flex flex-column h-100 " >
+  <div id = "join"></div>
+  <header class="mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
+      <div class="container">
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img src="images/logo.png" style="height:2.5rem;">
+        </a>
+       
+        <div class="navbar-collapse collapse" id="navbarsExample07">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="qrcode icon"></i>스마트키</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="list alternate outline icon"></i>이용 내역
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
+            </li>
+
+
+            <li class="nav-item  dropdown">
+              <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false"
+                href="#">
+                로그인
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
+                style="right: 0 !important;width: 24rem;">
+
+                <form class="ui form my-3 mx-3">
+                  <div class="field">
+                    <label class="float-left">전화번호</label>
+                    <input type="text" name="first-name" placeholder="">
+                  </div>
+                  <div class="field">
+                    <label class="float-left">비밀 번호</label>
+                    <input type="text" name="last-name" placeholder="">
+                  </div>
+
+                  <button class="ui fluid large submit button" type="submit" style = "border-top: 2px solid var(--main-color);">로그인</button> <br>
+
+                  <div class="ul list text-center"
+                    style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                    <a href="./join.html">회원 가입</a><br>
+                    <a href="./findpwd.html">ID/비밀번호 찾기</a>
+                  </div>
+                </form>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+ 
+
+  <main role="main" class="flex-shrink-0 mt-4 pt-4">
+    <div class="container" >
+    
+        <div class="mt-1 row justify-content-md-end ">
+          <div class="row row justify-content-md-end">
+            <div class=" col-lg-6">
+                <h1 class="ui header ">
+                    회원가입
+                </h1>
+                <div class="ui divider"></div>
+            </div>
+        </div>
+        <div class="mt-1 row justify-content-md-end ">
+          <div class=" col-lg-6 text-center fw-bold fs-1 align-middle my-auto">
+      스터디큐브
+          </div>
+          <div class=" col-lg-6 my-auto">
+                <form class="needs-validation" novalidate>
+  
+
+                    <div class="form-group row">
+                        <!-- <div class="row mb-3"> -->
+                            <!-- 핸드폰 입력했을 때 자동으로 중복 확인 -->
+  
+                        <label for="validationCustom01" class="col-sm-4 col-form-label">핸드폰번호*</label>
+                        <div class="input-group col-sm-8">
+                            <input type="tel" class="form-control" id="validationCustom01" placeholder="핸드폰번호*"  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                            value = "010"
+                                required />
+                            <div class="invalid-feedback">
+                                번호를 입력해 주세요.
+                            </div>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">인증합니다</button>
+                           
+                        </div>
+                    <!-- </div> -->
+                    </div>
+                 
+                    <p> <small id = "confirm_msg">인증번호를 카카오톡으로 전송했습니다. 확인해주세요.</small></p>
+
+                  
+                    <div class="form-group row">
+                        <label for="validationCustom01" class="col-sm-4 col-form-label">비밀번호</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="validationCustom01"
+                                placeholder="숫자 6자리" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="pw" class="col-sm-4 col-form-label">비밀번호 다시 입력</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="validationCustom01"
+                                required />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="validationCustom01" class="col-sm-4 col-form-label">이름</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="이름"
+                                required />
+                            <div class="invalid-feedback">
+                                회원님의 존함을 입력해주세요.
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="validationCustom01" class="col-sm-4 col-form-label">생년월일</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="980819"
+                                required />
+                            <div class="invalid-feedback">
+                                생년월일 6자리로 입력해주세요
+                            </div>
+                       
+                         </div>  
+                    </div>
+
+              
+                    <div class="form-group row">
+                        <label for="validationCustom01" class="col-sm-4 col-form-label">성별</label>
+                        <div class="col-sm-8">
+                         
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">남</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">여</label>
+                              </div>
+                          
+                         </div>  
+                    </div>
+                
+                    <div class="ui checkbox" style="display: block;">
+                        <input type="checkbox" name="example" checked>
+                        <label class="text-muted">
+                          서비스 이용약관에 동의
+                          <a href = "#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                           [자세히 보기]
+                          </a>
+                              
+                        </label>
+                    </div>
+
+                    
+                    <div class="ui checkbox" style="display: block;">
+                        <input type="checkbox" name="example" checked>
+                        <label class="text-muted">개인정보 수집 및 활용 동의
+                          <a href = "#" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                            [자세히 보기]
+                          </a>
+                               </label>
+                    </div>
+                    
+
+                    <button class="ui button mt-4 bg-e" style="width:25%" type="submit">
+                        회원가입
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  제 1 장 총칙
+      
+      
+      
+                  제 1 조 (목적) 본 약관은 주)투비스마트(이하 “회사”)가 공급한 스터디큐브 서비스가 제공하는 각종 서비스를 이용함에 있어 이용센터와 회원간의 권리, 의무 및 책임사항과 절차 등을 정하기 위해서 만들어졌습니다. 
+                  
+                  
+                  
+                  제 2 조 (정의) 본 약관에서 사용하는 용어의 정의는 다음과 같습니다. 
+                  
+                  1. “이용센터”이란 스터디큐브서비스로 운영되는 사업장을 말합니다. 
+                  
+                  2. “서비스”란 키오스크, 모바일, PC 를 통해 제공되는 스터디큐브 서비스를 말합니다.
+                  
+                  3. “회원”이란 키오스크 또는 모바일앱 등을 통해 이용약관에 동의하고 스터디큐브 서비스에 등록하여 가입한 자를 말합니다. 
+                  
+                  4. “스마트티켓”이란 “회원”으로 가입한 후 서비스이용을 위해 결제 후 스터디큐브 서비스가 발급한 QR코드 등을 말한다
+                  
+                  
+                  
+                  제 3 조 (약관의 효력 및 변경 등)
+                  
+                  1. 본 약관은 이용 매장의 키오스크 및 모바일앱 내 회원가입 시 이용약관에 동의함으로써 그 효력이 발생합니다. 
+                  
+                  2. 본 약관은 필요할 경우 변경될 수 있으며, 회사가 약관을 변경하고자 할 경우에는 개정된 약관을 적용하고자 하는 날(이하 “효력발생일”)로부터 30일 전에 약관이 개정된다는 사실과 개정된 내용 등을 모바일앱 또는 키오스크에 게시하는 방법 등으로 관련 법령에 의거하여 고객에게 고지합니다. 다만, 법령의 개정이나 제도의 개선, 감독기관의 권고 등으로 인하여 긴급히 본 약관을 변경할 경우에는 즉시 이를 게시할 수 있습니다. 
+                  
+                  3. 본 조의 규정에 의하여 개정된 약관은 원칙적으로 그 변경되는 약관의 효력발생일로부터 장래를 향하여 유효합니다. 
+                  
+                  
+                  
+                  제 4 조 (약관 외 준칙) 본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 관계법령 또는 상관례에 따릅니다. 
+                  
+                  
+                  
+                  제 2 장 스터디큐브 서비스
+                  
+                  
+                  
+                  제 5 조 (회원가입) 
+                  
+                  1. 회원으로 가입하여 서비스의 이용을 희망하는 자는 약관의 내용을 숙지한 후 동의함을 표시하고, 회사가 제시하는 소정의 회원가입 양식에 관련사항을 기재하여 회원가입을 신청하여야 합니다. 
+                  
+                  2. 회사는 전 항에 따라 이용자가 온라인(키오스크, 모바일, PC 등) 회원가입 신청양식에 기재하는 모든 회원정보를 실제 데이터인 것으로 간주합니다. 
+                  
+                  3. 본인 명의의 휴대폰, 실명이나 실제 정보를 입력하지 않은 회원은 법적인 보호를 받을 수 없으며, 본 약관의 관련 규정에 따라 서비스 사용에 제한을 받을 수 있습니다.
+                  
+                  4. 회사는 제1항에 따른 이용자의 신청에 대하여 회원가입을 승낙함을 원칙으로 합니다. 다만, 회사는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않을 수 있으며, 승낙 이후라도 취소할 수 있습니다. 
+                  
+                  가. 이용자의 귀책사유로 인하여 승인이 불가능한 경우 
+                  
+                  나. 실명을 사용하지 않은 경우 
+                  
+                  다. 타인의 명의 또는 개인정보를 도용하는 경우 
+                  
+                  라. 허위의 정보를 제공하는 경우 
+                  
+                  마. 중복된 아이디를 사용하는 경우 
+                  
+                  바. 회사가 제시하는 회원가입 신청양식에 관련 내용을 기재하지 않은 경우 
+                  
+                  사. 이전에 회사 이용약관 또는 관계법령을 위반하여 회원자격이 상실되었던 경우 
+                  
+                  
+                  
+                  제 6 조 (나이 이용 제한) 
+                  
+                  1. 각 이용센터 별로 별도의 나이 규정이 있는 경우 보호자와 동반 시 15세 미만의 경우에도 입장을 허용할 수 있습니다.  
+                  
+                  2. 15세 미만인 경우 입장을 허가하지 않는 매장의 경우 회원가입 및 시설이용이 불가하며, 허위의 정보를 기재하여 가입한 사실이 확인될 경우 본 약관에 근거하여 이용 제한은 물론 회원 자격이 취소될 수 있습니다. 시간패키지나 기간권을 결제하여 이용한 경우 본 약관 기준에 근거하여 환불 조치됩니다. 
+                  
+                  
+                  
+                  제 7 조 (회원정보의 변경) 
+                  
+                  1. 회원 본인이 직접 기재한 개인정보 중 일부는 원칙적으로 변경이 불가합니다. 단, 회원은 모바일앱 내 “정보수정” 페이지에서 언제든지 자신의 개인정보를 열람할 수 있으며, 오표시 및 착오 등의 사유로 수정을 원할 경우 관리자에게 수정 요청할 수 있습니다. 이 경우 관리자는 신분증 및 사실 관계 확인을 위한 서류를 요청할 수 있습니다. 
+                  
+                  2. 회원이 전 항의 변경사항을 수정하지 않아 발생한 불이익에 대하여 회사는 책임지지 않습니다. 
+                  
+                  
+                  
+                  제 8 조 (스마트티켓의 발급) 
+                  
+                  1. 스마트티켓은 회원가입 후 서비스이용을 위해 결제 시 해당 ID로 로그인 된 단말기(모바일앱, 키오스크, PC 등 각종 유무선 장치를 포함)에서 확인이 가능하다.
+                  
+                  2. 스마트티켓을 도난당하거나 제3자가 사용하고 있음을 인지한 경우 결제된 금액에 대한 부정한 사용이 발생하지 않도록 회원은 지체없이 고객센터 또는 매장의 직원에게 분실사실을 신고하여야 합니다.
+                  
+                  3. 전 항의 경우 회사에 통지하지 않거나, 안내에 따르지 않아 발생한 불이익에 대하여 회사는 책임지지 않습니다.
+                  
+                  4. 회사는 통상의 회원과 이용 가능한 서비스의 범위, 혜택 등이 다른 별도의 회원제도를 운영할 수 있으며 해당 회원들에게 별도의 식별력, 기능을 가진 모바일 스마트티켓을 발급할 수 있습니다. 별도의 회원제도를 시행할 경우 해당 회원들에게 별도의 스마트티켓 정책을 고지하고 동의를 받습니다. 
+                  
+                  
+                  
+                  제 9 조 (스마트티켓의 사용, 관리) 
+                  
+                  1. 스마트티켓은 매장의 각 출입문을 통과하거나 매장 내에서 열람실/스터디룸 좌석, 카페 음료, 문구류, 강연프로그램 등 재화와 용역을 결제할 때 관리자 혹은 단말기에 읽힘으로써 사용되거나 회원의 ID로 로그인 된 모바일앱 또는 키오스크의 결제 페이지에서 최종 결제 확인 버튼을 누름으로써 사용됩니다.
+                  
+                  2. 스마트티켓은 타인에게 양도 및 대여하거나 담보의 목적물로 이용할 수 없습니다. 단, 이는 회사의 정책에 따라 달라질 수 있으며 사전에 모바일앱 및 키오스크 혹은 매장내 알림판의 공지사항을 통하여 안내해 드립니다. 
+                  
+                  3. 회원이 스마트티켓을 제시할 경우 이용센터는 회원에게 본인 확인을 위한 신분증 제시를 요청할 수 있습니다. 이 경우 회원은 회사의 요청을 준수하여야 정상적인 서비스를 제공받을 수 있습니다. 
+                  
+                  
+                  
+                  제 10 조 (예약 및 유료 서비스 이용신청 등)
+                  
+                  1. 매장 내 열람실/스터디룸 좌석 이용 예약은 다음 각 호에 명시된 규칙과 절차에 의해 이용 및 환불 받을 수 있습니다.
+                  
+                  가. 이용 계약의 성립 시기는 회원이 모바일앱 또는 키오스크에서 예약 완료 후 회사가 예약완료로 승인한 시점으로 합니다.
+                  
+                  나. 회원은 모바일앱의 예약 확인 페이지에서 예약에 대한 내용 확인 및 이용 전 예약취소를 할 수 있습니다.
+                  
+                  다. 회원은 예약 후 이용시간 이전까지 예약취소를 할 수 있으며, 이후에는 취소가 불가능합니다.
+                  
+                  라. 회사는 공간의 예약취소에 관한 구체적인 사항을 별도의 이용정책으로 정할 수 있습니다.
+                  
+                  2. 그 외 유료 서비스 이용을 원하는 회원은 회사가 제공하는 다음 각호 또는 이와 유사한 절차에 의하여 유료 서비스 이용을 신청 합니다. 회사는 계약 체결 전, 다음 각호의 사항에 관하여 회원이 정확하게 이해하고 실수 또는 착오 없이 거래할 수 있도록 정보를 제공합니다.
+                  
+                  가. 월정액, 일일권, 시간권과 같은 유료 서비스 목록의 열람 및 선택
+                  
+                  나. 서비스 상세정보 확인(명칭, 종류, 내용, 가격, 이용기간 포함)
+                  
+                  다. 서비스 상품 및 결제금액 확인(환불규정 안내)
+                  
+                  라. 결제 
+                  
+                  3. 회원은 신용카드, 현금 등 회사에서 정하고 있는 방법으로 유료서비스의 결제가 가능합니다. 다만, 각 결제수단마다 결제수단의 특성에 따른 일정한 제한이 있을 수 있습니다.
+                  
+                  4. 미성년 회원의 경우 보호자와 동반하지 않을 경우 열람실 이용이 불가할 수 있으며, 열람실 외 기타 부대 시설로 이용범위를 한정합니다.
+                  
+                  
+                  
+                  제 11 조 (환불)
+                  
+                  1. 이용센터가 결제한 재화와 용역은 제2항의 각 호의 규정에 따라 환불 가능하며, 각 재화와 용역의 판매 당시 별도로 고지한 환불 규정이 있다면 해당 규정에 따라 환불됩니다. 
+                  
+                  2. 이용센터 사용시 이용 전 모바일앱 예약취소 페이지에서 결제 취소를 요청함으로써 구매방법에 따라 신용카드 또는 휴대폰 취소 등의 형식으로 환불 받을 수 있습니다. 그러나 좌석 이용 후 환불은 불가 합니다. 시간패키지, 사물함 또한 결제 후 환불이 불가합니다.
+                  
+                  3. 프리미엄독서실 사용시 환불 규정은 아래의 명시된 규칙과 절차와 같습니다. 
+                  
+                  가. 회원이 결제 후 좌석 이용권을 사용하지 않은 상태에서 환불을 원하는 경우 모바일앱 예약취소 페이지에서 결제 취소를 요청함으로써 구매방법에 따라 신용카드 또는 휴대폰 취소 등의 형식으로 환불 받을 수 있습니다.   
+                  
+                  나. 회원이 결제 후 기간제 좌석 이용권을 사용한 경우 스마트키를 발급받은 휴대폰을 지참하여 매장의 관리자에게 환불요청, 해당 결제를 취소한 후 사용한 기간만큼 재 결재 합니다.
+                  
+                  다. 회원이 결제 후 시간제 좌석 이용권을 사용한 경우 환불 받을 수 없습니다. 시간패키지, 사물함 또한 결제 후 환불이 불가합니다.
+                  
+                  라. 회원의 금액 결제 없이 관리자에 의해 혜택으로 지급된 이용권, 쿠폰, 기타 충전 및 적립시 회사가 환불이 불가함을 사전에 고지한 이용권은 환불 대상 금액에서 제외됩니다.
+                  
+                  
+                  
+                  제 12 조 (서비스의 변경) 
+                  
+                  1. 회사는 운영상, 기술상의 필요에 따라 제공하는 서비스의 전부 또는 일부를 변경할 수 있으며, 이에 대하여 본 약관에 다른 규정이 없는 한 회원에게 별도의 보상을 하지는 않습니다.
+                  
+                  2. 서비스를 변경하는 경우 변경사유 및 일자, 변경내용을 변경 14일 전 공지사항 게시판에 공지합니다. 단, 변경사유 또는 내용을 구체적으로 공지하기 어려운 경우에는 그 이유를 밝힙니다. 
+                  
+                  
+                  
+                  제 13 조 (서비스의 일시 중단) 
+                  
+                  1. 회사는 서비스 관련 설비 보수점검, 교체 및 고장, 통신두절 등 기술상, 업무상의 이유로 서비스의 제공을 일시적으로 중단할 수 있습니다. 이 경우 사전에 통지함을 원칙으로 하지만 부득이한 사유가 있는 경우 사후에 통지할 수 있습니다. 
+                  
+                  2. 서비스 일시 중단은 매장 또는 모바일앱, 홈페이지에 게시하는 방법으로 통지합니다. 
+                  
+                  
+                  
+                  제 14 조 (고객의 의무)
+                  
+                  1. 고객은 본 약관에서 규정하는 사항과 이용안내 또는 공지사항 등을 통하여 회사가 제공하는 사항을 준수하여야 하며, 기타 회사의 업무에 방해되는 행위를 하여서는 안됩니다.     
+                  
+                  2. 고객은 스스로 결제하거나 관리자에 의해 지급된 이용권을 이용하여 영업활동을 할 수 없습니다. 
+                  
+                  3. 회원은 적립한 이용권을 다른 회원에게 재판매 할 수 없습니다. 
+                  
+                  
+                  
+                  제 15 조 (회사의 의무) 
+                  
+                  1. 회사는 관련 법령 또는 본 약관을 위반하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위하여 최선을 다합니다.
+                  
+                  2. 회사는 신용정보를 포함한 회원의 개인정보 보호를 위하여 보안시스템을 갖추며 개인정보취급방침을 공시하고 준수합니다. 
+                  
+                  3. 회사는 서비스 이용과 관련한 회원의 의견이나 불만사항 등이 정당하다고 인정할 경우 이를 처리하여야 합니다. 처리된 결과는 게시판 또는 회원이 동의한 전달 방법을 통해 회원에게 통보합니다. 
+                  
+                  
+                  
+                  제 3 장 거래내역 정보
+                  
+                  
+                  
+                  제 18 조 (거래내역의 수집, 제공) 
+                  
+                  
+                  
+                  1. 회사는 고객이 ID 를 통해 재화와 용역을 구매할 시 필요한 최소한의 거래내역 정보(카드 번호, 거래 일시, 거래 금액, 단말기 및 매장 정보 등)를 수집합니다. 
+                  
+                  2. 고객의 계속적인 ID 사용은 스마트티켓을 통해 수집된 거래내역 정보가 이용대금 정산의 목적 및 회사의 마케팅 활용의 목적에 사용되는 것에 대하여 동의한 것으로 간주합니다. 
+                  
+                  3. 회사는 회원이 모바일앱 및 홈페이지를 통해 거래 내역을 확인할 수 있도록 거래 내역 조회 기능을 제공합니다. 
+                  
+                  
+                  
+                  제 19 조 (거래 내역의 정정)
+                  
+                  
+                  
+                  1. 회원은 본인이 이용한 거래와 관련된 오류를 발견하는 경우 소명할 수 있는 자료를 갖추고 회사가 정한 절차를 거쳐, 해당 거래에 대한 정정을 요청할 수 있습니다.
+                  
+                  2. 회사는 제1항에 의해 고객의 정정 요청을 받은 날로부터 2주 이내에 해당 거래내역을 검토하여 고객에게 그 결과를 통보하여 드립니다. 
+                  
+                  
+                  
+                  제 4 장 개인정보 보호
+                  
+                  
+                  
+                  제 20 조 (개인 정보 보호) 
+                  
+                  
+                  
+                  1. 회사는 관련법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위하여 노력합니다. 
+                  
+                  2. 개인정보보호와 관련된 자세한 사항은 모바일앱 및 홈페이지에서 전자적 표시형태로 제공되는 개인정보처리방침에서 확인하실 수 있습니다. 
+                  
+                  
+                  
+                  제 5 장 기타
+                  
+                  
+                  
+                  제 21 조 (저작권의 귀속 및 이용제한) 
+                  
+                  
+                  
+                  1. 회사의 상표, 로고, 제공하는 서비스 및 광고내용에 관한 지적재산권 등의 권리는 회사에 귀속합니다. 
+                  
+                  2. 회원은 서비스를 이용함으로써 얻은 정보를 회사의 사전승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하도록 하여서는 안됩니다. 
+                  
+                  
+                  
+                  제 22 조 (준거법 및 합의관할) 
+                  
+                  
+                  
+                  1. 회사와 회원간에 제기된 법적 분쟁은 대한민국 법을 준거법으로 합니다. 
+                  
+                  2. 회사와 회원간의 분쟁에 관한 소송은 회사의 본점 소재지를 관할하는 법원 또는 민사소송법 상의 관할법원에 제소합니다.
+                  
+                  
+                  
+                  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="privacyModalLabel">개인정보 수집 및 활용 동의</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                         
+              개인정보 취급방침
+               
+              처리하는 개인정보의 항목 및 수집방법
+               
+              가. 회사는 회원가입, 상담을 위해 아래와 같이 최소한의 개인정보를 수집하고 있습니다. 
+              - 선택 항목: 직업, 응시시험, 거주환경, 출신학교
+               
+              나. 서비스 이용과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다. 
+              - 부정사용 기록: 접속 IP 정보 
+              - 사용 기록: 회원의 서비스 이용에 대한 통계 
+              - 결제 기록: 승인번호, 은행/카드사 코드 
+               
+              다. 개인정보 수집방법: 키오스크 또는 모바일 어플리케이션(회원가입) 개인정보의 처리 목적회사는 다음의 목적을 위해 이용자의 개인정보를 처리합니다.  
+              - 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산, 콘텐츠 제공, 구매 및 요금 결제, 본인인증, 물품배송 또는 청구지 등 발송 
+              - 회원 관리 회원제 서비스 이용에 따른 본인확인, 개인 식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 연령확인, 불만처리 등 민원처리, 고지사항전달 
+              - 기타 분쟁조정을 위한 기록보존 개인 정보의 처리 및 보유기간 개인정보의 처리 및 보유기간은 다음과 같습니다. 
+              - 보유 항목: 처리항목과 동일함
+              - 보유 근거: 이용약관 및 개인정보처리방침 
+              - 보유 기간: 이용계약에 따른 회원자격이 유지되는 기간 동안 그러나 회원탈퇴 후에도 전자상거래등에서의 소비자보호에 관한 법률 및 그 시행령에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 일정기간동안 회원정보를 보관합니다.
+              - 표시∙광고에 관한 기록: 6개월 
+              - 계약 또는 청약철회 등에 관한 기록: 2년 
+              - 대금결제 및 재화 등의 공급에 관한 기록: 2년  
+              - 소비자의 불만 또는 분쟁 처리에 관한 기록: 2년 
+              - 마케팅 및 광고에 활용 신규 서비스(제품) 개발 및 특화, 이벤트 등 광고성 정보 전달, 인구통계학적 특성에 따른 서비스 제공 및 광고 게재, 접속 빈도 파악 
+               
+              개인정보 제3자 제공약관
+              예약 서비스 제공을 위해 아래 정보가 제공됩니다. 고객님께서는 정보제공에 동의하지 않을 수 있으며, 동의하지 않는 경우 예약 서비스 이용이 제한 될 수 있습니다.
+              제공 받는 자: 이용센터 (스터디카페, 프리미엄독서실)
+              제공 목적: 예약 서비스 이용 계약 이행(서비스 제공, 이용자확인, 이용 정보 확인)제공 
+              정보: 예약자명, 휴대폰번호, 기타 
+              예약정보보유 및 이용기간: 서비스 제공 완료 후 1년
+               
+              개인정보 책임자:  주)투비스마트 강도훈부장  
+              이메일:  kangdo@tobesmart.co.kr
+               
+               
+               
+               
+              
+              
+              
+                                  </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+ 
+  
+
+</main>
+
+
+  <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top ">
+    <div class="row mt-4">
+      <div class="col">
+        <i class="coffee icon"></i>
+      </div>
+      <div class="col">
+        <i class="list alternate outline icon"></i>
+      </div>
+      <div class="col">
+        <i class="user outline icon"></i>
+      </div>
+      <div class="col">
+        <i class="qrcode icon"></i>
+      </div>
+    </div>
+
+  </nav>
+
+  <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
+    <div class="ui container">
+      <div class="row text-center">
+        <div class="container-fluid">
+          <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Only join -->
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

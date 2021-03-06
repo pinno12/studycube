@@ -42,7 +42,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Sans KR", Georgia, "Times New Roman", serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .nav-scroller {
@@ -157,9 +157,43 @@ a.nav-link:hover {
     left: 0;
     bottom: 0;
     width: 100%; 
-    color: var(--main-color);
+    color: whitesmoke;
     text-align: center;
  }
  .mobile-nav i{
      font-size:2rem;
+ }
+
+
+ /* input[type=email]:focus {
+    border: 3px solid var(--text-color);
+    box-shadow: none;
+  }
+
+ input[type=email] {
+    border: 3px solid var(--main-color);
+  } */
+
+  input:focus[type] {
+    border: 3px solid var(--text-color);
+    box-shadow: none;
+  }
+
+ input[type] {
+    border: 3px solid var(--main-color);
+  }
+
+
+  #join{
+    background-image: url('images/photos/1.png'); 
+    background-size: cover; 
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    position: absolute;
+ }
+
+ .ui.divider:not(.vertical):not(.horizontal){
+     border-top:1px solid var(--sub-color);
  }

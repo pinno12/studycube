@@ -1,7 +1,9 @@
 
 AOS.init();
 
-
+$('.ui.modal')
+  .modal('show')
+;
 
 $('.tool-tip').popup();
 
@@ -44,6 +46,8 @@ for (var i = 0; i < links.length; i++) {
   links[i].href = "./join.html"
   // 안되 어있을 땐 본래 링크 유지 links[i].href = links[i].href        
 }
+
+
 
 
 
