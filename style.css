@@ -137,10 +137,10 @@ a.nav-link:hover {
 }
 
 .ui.button.items {
-    height: 30vh;
-    line-height: 5rem;
+    /* height: 30vh;
+    line-height: 5rem; */
     background: whitesmoke;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
 }
 
 .ui.button.items:hover {
@@ -197,3 +197,5 @@ a.nav-link:hover {
  .ui.divider:not(.vertical):not(.horizontal){
      border-top:1px solid var(--sub-color);
  }
+
+ 

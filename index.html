@@ -13,7 +13,8 @@
   <title>스터디큐브 독서실 예약</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -30,9 +31,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- 애플지도 -->
-  <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 
 
   <!-- favicon -->
@@ -57,11 +57,31 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- 독서실 스타일-->
   <link rel="stylesheet" href="./style.css">
+
+
+  <!-- Index -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" /> -->
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+
+<!-- If you use the default popups, use this. -->
+<!-- 
+
+<script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
+<script src="https://uicdn.toast.com/tui.code-snippet/v1.5.2/tui-code-snippet.min.js"></script>
+
+<script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
+
+<script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script> -->
+
+<!-- <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script> -->
+
+
 </head>
 
 
@@ -81,9 +101,13 @@
               <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon"></i>스마트키</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="list alternate outline icon"></i>이용 내역
+              <a class="nav-link active" aria-current="page" href="myhistory.html"><i
+                  class="list alternate outline icon"></i>이용 내역
               </a>
             </li>
+
+
+            <!-- If session login -->
 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
@@ -108,7 +132,8 @@
                     <input type="text" name="last-name" placeholder="">
                   </div>
 
-                  <button class="ui fluid large submit button" type="submit" style = "border-top: 2px solid var(--main-color);">로그인</button> <br>
+                  <button class="ui fluid large submit button" type="submit"
+                    style="border-top: 2px solid var(--main-color);">로그인</button> <br>
 
                   <div class="ul list text-center"
                     style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
@@ -128,11 +153,12 @@
 
 
 
-
   <main role="main" class="flex-shrink-0 mt-4 pt-4">
 
 
     <div class="container">
+
+      <article class = "info">
       <div class="ui top attached tabular menu">
         <a class="item active" data-tab="info">소개</a>
         <a class="item" data-tab="price">요금 안내</a>
@@ -141,7 +167,8 @@
       <div class="ui bottom attached tab segment active" data-tab="info">
         <div class="row">
           <div class="col-lg-6">
-            <div id="myCarousel" class="ui black segment carousel slide" data-ride="carousel" data-interval="false" style="border-top: 2px solid var(--main-color) !important" >
+            <div id="myCarousel" class="ui black segment carousel slide" data-ride="carousel" data-interval="false"
+              style="border-top: 2px solid var(--main-color) !important">
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -153,7 +180,7 @@
 
                 </div>
                 <div class="carousel-item bg-white text-center">
-                  <img src="images/photos/2.png" >
+                  <img src="images/photos/2.png">
                 </div>
                 <div class="carousel-item bg-white">
                   <img src="images/photos/3.png">
@@ -170,92 +197,290 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-        
-        </div>
-        <div class="col-lg-6">
-          <h1 class="ui header">
-            오키도키 독서실 <small> ☎️02-319-9999 | 서울시 성북구 장월로 333 </small>
-          </h1>
-          <div class="ui divider"></div>
-          공지사항입니다. 오늘도 내일도 오키도키 독서실입니다.
+
+          </div>
+          <div class="col-lg-6">
+            <h1 class="ui header">
+              오키도키 독서실 <small> ☎️02-319-9999 | 서울시 성북구 장월로 333 </small>
+            </h1>
+            <div class="ui divider"></div>
+            공지사항입니다. 오늘도 내일도 오키도키 독서실입니다.
+          </div>
         </div>
       </div>
 
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="price">
-      <table class="table text-center">
-        <thead>
-          <tr>
+      <div class="ui bottom attached tab segment" data-tab="price">
+        <table class="table text-center">
+          <thead>
+            <tr>
 
-            <th scope="col">좌석 타입</th>
-            <th scope="col">기본 요금</th>
-            <th scope="col">연장 요금</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <!-- Rowspan number shoud be customized -->
-            <td scope="row" rowspan="2">자유석</td>
-            <td>2시간: 3,000원</td>
-            <td>2시간: 3,000원</td>
-          </tr>
-          <tr>
-            <!-- <th scope="row">2</th> -->
-            <td>4시간: 5,000원</td>
-            <td>4시간: 5,000원</td>
-          </tr>
-          <tr>
-            <th scope="row">6인 스터디룸</th>
-            <!-- 연장요금과 같을 때 colspan=2로 하기. 이 룰은 자율적으로 사내에서 정할 것 -->
-            <td colspan="2">4시간: 8000원</td>
-          </tr>
-          <tr>
-            <!-- Rowspan number shoud be customized -->
-            <td scope="row" rowspan="2">시간 패키지</td>
-            <td colspan="2">20시간 35,000원</td>
-            <!-- <td>2시간: 3,000원</td> -->
-          </tr>
-          <tr>
-            <td colspan="2">30시간: 50,000원</td>
-          </tr>
+              <th scope="col">좌석 타입</th>
+              <th scope="col">기본 요금</th>
+              <th scope="col">연장 요금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- Rowspan number shoud be customized -->
+              <td scope="row" rowspan="2">자유석</td>
+              <td>2시간: 3,000원</td>
+              <td>2시간: 3,000원</td>
+            </tr>
+            <tr>
+              <!-- <th scope="row">2</th> -->
+              <td>4시간: 5,000원</td>
+              <td>4시간: 5,000원</td>
+            </tr>
+            <tr>
+              <th scope="row">6인 스터디룸</th>
+              <!-- 연장요금과 같을 때 colspan=2로 하기. 이 룰은 자율적으로 사내에서 정할 것 -->
+              <td colspan="2">4시간: 8000원</td>
+            </tr>
+            <tr>
+              <!-- Rowspan number shoud be customized -->
+              <td scope="row" rowspan="2">시간 패키지</td>
+              <td colspan="2">20시간 35,000원</td>
+              <!-- <td>2시간: 3,000원</td> -->
+            </tr>
+            <tr>
+              <td colspan="2">30시간: 50,000원</td>
+            </tr>
 
-          <tr>
-            <td scope="row" rowspan="2">기간권</td>
-            <td colspan="2">1주(7일): 50,000원</td>
-          </tr>
-          <tr>
-            <td colspan="2">2주(14일): 50,000원</td>
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <td scope="row" rowspan="2">기간권</td>
+              <td colspan="2">1주(7일): 50,000원</td>
+            </tr>
+            <tr>
+              <td colspan="2">2주(14일): 50,000원</td>
+            </tr>
+          </tbody>
+        </table>
 
-    </div>
-    <div class="ui bottom attached tab segment" data-tab="map">
-      <div id="map" style="width:100%;height:350px;"></div>
-    </div>
+      </div>
+      <div class="ui bottom attached tab segment" data-tab="map">
+        <div id="map" style="width:100%;height:350px;"></div>
+      </div>
+    </article>
 
-    </div>
+
+      <h3 class="ui header">구매</h3>
+      <div class="ui section divider"></div>
+
+      
+      <div class="ui one column grid" id="products">
+        <div class="column product">
+        <div class="card ui button">
+          <div class="content">
+            <div class="header"> <i class="chair icon fs-1" style="color:var(--main-color);"></i></div>
+            <div class="description">
+              <p>좌석 예약</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="column product">
+
+          <!-- <button class="ui button full-width items" onclick="bg_change($(this).attr('id'))" id="time"
+            style="border:1px solid var(--sub-color);">
+            <div class="ui top left attached olive label">시간 패키지 충전</div>
+            <i class="clock icon"></i>
+          </button> -->
+          <div class="card ui button">
+            <div class="content">
+              <div class="header"> <i class="clock icon fs-1" style="color:var(--main-color);"></i></div>
+              <div class="description">
+                <p>좌석 예약</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column product">
+
+          <button class="ui button full-width items " onclick="bg_change($(this).attr('id'))" id="period"
+            style="border:1px solid var(--text-color);">
+            <div class="ui top left attached olive label">기간권 충전</div>
+            <i class="calendar alternate outline icon fs-1"></i>
+
+          </button>
+
+        </div>
+
+        <div class="column product">
+
+          <button class="ui button full-width items " onclick="bg_change($(this).attr('id'))" id="period"
+            style="border-bottom:10px double gold;">
+            <div class="ui top left attached olive label">사물함 신청</div>
+            <i class="archive icon"></i>
+          </button>
+
+        </div>
+        <div class="column product">
+          <button class="ui black basic labeled icon button full-width">
+            <i class="mug hot icon"></i>
+            쇼핑하기
+          </button>
+
+          <!-- <button class="ui button full-width items " onclick="bg_change($(this).attr('id'))" id="period"
+            style="border-bottom:10px double gold;">
+            <div class="ui top left attached olive label">쇼핑하기</div>
+            <i class="mug hot icon"></i>
+          </button>      -->
+        </div>
+        </div>
+
+        <div class="ui brown segment my-5 full-width" >
+          <div class="row">
+            <div class="col-lg-4">
+
+              <div class="ui form">
+                <div class="grouped fields">
+                  <label>좌석 선택</label>
+                  <!-- 좌석 종류 -->
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="example2" checked="checked">
+                      <label>자유석</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="example2">
+                      <label>6인 스터디룸</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="example2">
+                      <label>1인 지정 좌석</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class = "col-lg-4" id = "second_column">         
+              <input type="text" id="calendar-range">
+              <!-- document.getElementById('calendar-range').value -->
+
+              <button class="ui red tertiary button">1시간</button>
+              <button class="ui orange tertiary button">2시간</button>
+              <button class="ui yellow tertiary button">3시간</button>
+              <button class="ui olive tertiary button">4시간</button>
+              <button class="ui green tertiary button">6시간</button>
+              <button class="ui teal tertiary button">12시간</button>
+            </div>
+
+            <div class = "col-lg-4" id = "third_column">
+
+              <div class = "ui pink segment">
+         
+                <div class="btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary mr-3" for="btnradio1"> 1</label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                  <label class="btn btn-outline-primary mr-3" for="btnradio2"> 2</label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio3">3</label>
+    
+                              
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio4">4</label>
+                </div>
+             
+              </div>
+    
+<!-- <button class="ui blue button">Blue</button> -->
+
+            </div>
+          </div>
+
+      
+
+
+          <div class="row">
+            <p>
+            <h2 id="item-name"></h2>특전 혜택
+            <ul>
+              <li>무료체험 서비스(7일간) : 실버/골드/프리미엄 고객 (맞춤형 서비스는 제외)</li>
+              <li>실시간 급변동 주식 종목 SMS 알림 서비스</li>
+            </ul>
+            </p>
+
+            <div class="d-grid gap-2">
+
+              <!-- 추가 구현 -->
+              <!-- <button class="ui yellow button full-width"><a href = "./join.html">가입하기</a></button> -->
+
+              <!-- if logined -->
+              <button class="ui yellow button full-width" data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                구독하기
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <div class="ui yellow segment">
+                <h1><span id="item-name2">실버</span> 상품의 결제 수단을 선택하세요</h1>
+                <div class="ui form">
+                  <div class="two fields">
+                    <div class="field">
+                      <label>이름</label>
+                      <input type="text" placeholder="김나라" value="김나라">
+                    </div>
+                    <div class="field">
+                      <label>전화</label>
+                      <input type="text" placeholder="010-9111-0222" value="010-9111-0222">
+                    </div>
+                  </div>
+                </div>
+                <div class="ui two top attached buttons">
+                  <div class="ui  button" style="background-color: #C1C6C6;">
+                    <h3>무통장입금 계좌번호</h3>
+                    <h2 class="text-primary">1005-203-472150</h2>
+                    <h3 class="text-primary ">우리은행 이글레오에프티</h3>
+                  </div>
+                  <div class="ui button" style="background-color: #d9d9d6; padding-top:4rem;">
+                    <a class="text-dark" href="./tailor8.html#t7">
+                      <h2>신용카드 결제</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
   </main>
 
 
   <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top ">
     <div class="row mt-4">
       <div class="col">
-        <i class="coffee icon"></i>
+        <a href="index.html"><i class="coffee icon"></i></a>
       </div>
       <div class="col">
-        <i class="list alternate outline icon"></i>
+        <a href="myhistory.html"><i class="list alternate outline icon"></i></a>
       </div>
       <div class="col">
         <i class="user outline icon"></i>
       </div>
       <div class="col">
-        <i class="qrcode icon"></i>
+        <a href="smartkey.html"><i class="qrcode icon"></i></a>
       </div>
     </div>
 
   </nav>
-
   <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
     <div class="ui container">
       <div class="row text-center">
@@ -280,11 +505,74 @@
 
 
   </script> -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
   <script src="./script.js"></script>
+  <script>
+
+
+flatpickr('#calendar-range', {
+    "mode": "range",
+    "locale": "ko",
+    inline: true,
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+  
+
+});
+
+      // var datepicker = new tui.DatePicker('#wrapper', {
+      //   date: new Date(),
+      //   input: {
+      //     element: '#datepicker-input',
+      //     format: 'yyyy-MM-dd HH:mm A'
+      //   },
+      //   timePicker: true
+      // });
+
+      // var datepicker2 = new tui.DatePicker('#wrapper-2', {
+      //   date: new Date(),
+      //   input: {
+      //     element: '#datepicker-input-2',
+      //     format: 'yyyy-MM-dd HH:mm A'
+      //   },
+      //   timePicker: {
+      //     layoutType: 'tab',
+      //     inputType: 'spinbox'
+      //   }
+      // });
+    
+
+
+    let num, products, arr, classToAdd;
+    num = $('.product').length;
+    products = document.getElementById("products")
+
+    arr = products.className.split(" ");
+    switch (num) {
+      case 2:
+        products.classList.replace("one", "two");
+        break;
+      case 3:
+        products.classList.replace("one", "three");
+        break;
+      case 4:
+        products.classList.replace("one", "four");
+        break;
+      case 5:
+        products.classList.replace("one", "five");
+        break;
+    }
+
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
+
+  <!-- You MUST include jQuery before Fomantic -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
 </body>
 
 </html>

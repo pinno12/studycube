@@ -1,10 +1,11 @@
 
-AOS.init();
-
 $('.ui.modal')
   .modal('show')
 ;
 
+
+
+  
 $('.tool-tip').popup();
 
 function bg_change(color) {
