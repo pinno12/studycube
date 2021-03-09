@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="h-100" lang="ko">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,13 +10,13 @@
     <meta name="generator" content="Jekyll v4.1.1">
     <meta property="og:title" content="스터디큐브 독서실">
     <meta property="og:description" content="집중이 잘 되는 시간">
-    <meta property="og:image" content="images/thumbnail.png">
+    <meta property="og:image" content="images/photos/1.png">
     <title>스마트키 | 스터디큐브</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&amp;family=Noto+Sans+KR:wght@100;400;700&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -31,15 +32,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- 애플지도 -->
-    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.png">
-    <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
@@ -58,8 +58,14 @@
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Index -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" /> -->
+    <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+
 
     <!-- 독서실 스타일-->
     <link rel="stylesheet" href="./style.css">
@@ -71,7 +77,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
             <div class="container">
                 <a class="navbar-brand mx-auto" href="index.html">
-                    <img src="images/logo.png" style="height:2.5rem;">
+                    <img src="images/logo.png" class="logo" style="height:2.5rem;">
                 </a>
                 <!-- <button class="navbar-toggler collapsed d-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
@@ -129,105 +135,136 @@
         </nav>
     </header>
 
-    <main role="main" class="flex-shrink-0 mt-4 pt-4">
+    <main role="main" class="flex-shrink-0 mt-4 py-5">
         <div class="container">
 
             <div class="row mt-4">
-                <div class="col">
-                    <h1 class="ui header">스마트키 <span class="small text-muted" style="font-size:0.8rem;">(6)</span>
-                    </h1>
-                </div>
-                <div class="col">
-                    <div class="ui secondary basic button float-right">사용안내</div>
-                </div>
-            </div>
-            <div class="ui divider"></div>
 
-            <div class="row">
-                <div class="col-lg-6">
-
-                    <div class="d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</buttona>
-                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-                        </div>
-                        <div class="tab-content" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-                        </div>
-                      </div>
-
-                    <div class="ui vertical menu">
-                        <a class="item active">
-                          <h4 class="ui header">Promotions</h4>
-                          <p>Check out our new promotions</p>
-                        </a>
-                        <a class="item">
-                          <h4 class="ui header">Coupons</h4>
-                          <p>Check out our collection of coupons</p>
-                        </a>
-                        <a class="item">
-                          <h4 class="ui header">Rebates</h4>
-                          <p>Visit our rebate forum for information on claiming rebates</p>
-                        </a>
-                      </div>
-                    <div class="ui stacked segments">
-                        <div class="ui segment">
-                            <p>Top</p>
-                        </div>
-                        <div class="ui segment">
-                            <p>Middle</p>
-                        </div>
-                        <div class="ui segment">
-                            <p>Bottom</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <span id="center">
-                        한강 센터 
-                    </span>
-                    <span id="category">
-                        자유석</span>
-                    <span id="spot">18번</span>
-                    <span id="startDate">2021년 2월 25일 13시 45분</span> ~ <span id="endDate">2021년 2월 25일 14시 45분 </span>
-                    <span id="duration">(1시간)</span>
-
-                    <p class="mt-5 pt-5 text-center my-auto align-middlec">
-                        <img src="./images/myQr/2003021.webp" id="myQr">
-                    </p>
-
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-                      
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-                      
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-                      </div>
-
-
-                </div>
-
-
-
+                <h1 class="ui header">스마트 티켓 <span class="small text-muted" style="font-size:1rem;">(6)</span>
+                </h1>
             </div>
 
+<div class = "ui divider"></div>
+            <div class="">
+                <div class="row ui horizontal basic segments">
+
+                    <div class="col-lg-6 ui segment">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+
+                                <div id="selected" class = "text-center">
+                                  
+                                </div>
 
 
 
 
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <p id="msg"></p>
+                            </div>
+                        </div>
+                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active ui secondary basic button" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">스마트키</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link ui secondary button" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">좌석변경</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link ui button" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">시간연장</button>
+                            </li>
+                            <button type="button" class="ui secondary basic button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                예약 취소
+                              </button>
+                        </ul>
 
+                        <!-- Button trigger modal -->
 
-
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">예약을 취소하시겠습니까?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          ㄷㄷㄷ취소하면 2-3일 안으로 카드가 취소됩니다.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">뒤로 가기</button>
+          <button type="button" class="ui secondary button">취소합니다</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
 
+
+                    <div class="col-lg-6 ui segment">
+
+
+
+                        <div class="ui vertical menu" style="width:100%; border:none; box-shadow: none;">
+                            <a class="item active" onclick="smartkey($(this).attr('id'))" id="2003051">
+                                <h4 class="ui header category c-text">자유석 10번</h4>
+                                <span class="startDate fw-bold">2021년 3월 5일 13시 45분</span> ~ <span
+                                    class="endDate fw-bold">2021년 2월 25일 14시 45분 </span>
+                                <span class="ui duration text-secondary ui mini text">(1시간)</span>
+
+                                <div class="qr d-none" id="myQr_2003051">
+                                    <p class="my-5 py-5 text-center my-auto align-middle ">
+                                        <img src="./images/myQr/2003021.webp" class="myQr">
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a class="item" onclick="smartkey($(this).attr('id'))" id="2003041">
+                                <h4 class="ui header category c-text">자유석 4번</h4>
+                                <span class="startDate fw-bold">2021년 2월 25일 13시 45분</span> ~ <span
+                                    class="endDate fw-bold">2021년 2월 25일 14시 45분 </span>
+                                <span class="ui duration text-secondary ui mini text">(1시간)</span>
+
+
+                                <div class="qr d-none" id="myQr_2003041">
+                                    <p class="mt-5 py-5 text-center my-auto align-middle ">
+                                        <img src="./images/myQr/2003041.png" class="myQr">
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a class="item" onclick="smartkey($(this).attr('id'))" id="2003332">
+                                <h4 class="ui header category c-text">자유석 15번</h4>
+                                <span class="startDate fw-bold">2021년 3월 33일 13시 45분</span> ~ <span
+                                    class="endDate fw-bold">2021년 2월 25일 16시 45분 </span>
+                                <span class="ui duration text-secondary ui mini text">(3시간)</span>
+
+                                <div class="qr d-none" id="myQr_2003332">
+                                    <p class="mt-5 py-5 text-center my-auto align-middle ">
+                                        <img src="./images/myQr/2003021.webp" class="myQr">
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
 
     </main>
 
@@ -259,11 +296,22 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+          $("#" + '2003051').clone().appendTo("#selected")
+let item = '2003051';
+
+document.getElementById('myQr_' + item).classList.remove("d-none");
+    </script>
+    
+
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,22 @@ function bg_change(color) {
   document.getElementById("item-name2").textContent = color;
 }
 
+function smartkey(item) {
+  item = item || "2003051"; // default
+
+  $(".item").removeClass("active");
+  document.getElementById(item).classList.add("active");
+  document.getElementById('myQr_' + item).classList.add("d-none");
+  
+  $("#selected").empty();
+  $("#" + item).clone().appendTo("#selected")
+
+  document.getElementById('myQr_' + item).classList.remove("d-none");
+}
+
+
+
+
 $('.ui.checkbox')
   .checkbox()
   ;
@@ -22,6 +38,7 @@ $('.ui.checkbox')
   $('.menu .item')
   .tab()
 ;
+
 
 $('.input-field').focus(function () {
   $(this).prev().addClass('focus');
@@ -40,13 +57,6 @@ $('.input-field').blur(function () {
   }
 });
 
-
-//구현 필요: 회원 가입 되어 있을 때
-var links = document.querySelectorAll('.guest');
-for (var i = 0; i < links.length; i++) {
-  links[i].href = "./join.html"
-  // 안되 어있을 땐 본래 링크 유지 links[i].href = links[i].href        
-}
 
 
 
