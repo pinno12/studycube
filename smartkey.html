@@ -75,68 +75,65 @@
 <body class="d-flex flex-column h-100 ">
     <header class="mb-4">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
-            <div class="container">
-                <a class="navbar-brand mx-auto" href="index.html">
-                    <img src="images/logo.png" class="logo" style="height:2.5rem;">
-                </a>
-                <!-- <button class="navbar-toggler collapsed d-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>     -->
-                <div class="navbar-collapse collapse" id="navbarsExample07">
-                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="qrcode icon"></i>스마트키</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i
-                                    class="list alternate outline icon"></i>이용 내역
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i
-                                    class="user outline icon"></i>박청이</a>
-                        </li>
-
-
-                        <li class="nav-item  dropdown">
-                            <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown"
-                                aria-expanded="false" href="#">
-                                로그인
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
-                                style="right: 0 !important;width: 24rem;">
-
-                                <form class="ui form my-3 mx-3">
-                                    <div class="field">
-                                        <label class="float-left">전화번호</label>
-                                        <input type="text" name="first-name" placeholder="">
-                                    </div>
-                                    <div class="field">
-                                        <label class="float-left">비밀 번호</label>
-                                        <input type="text" name="last-name" placeholder="">
-                                    </div>
-
-                                    <button class="ui fluid large submit button" type="submit"
-                                        style="border-top: 2px solid var(--main-color);">로그인</button> <br>
-
-                                    <div class="ul list text-center"
-                                        style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
-                                        <a href="./join.html">회원 가입</a><br>
-                                        <a href="./findpwd.html">ID/비밀번호 찾기</a>
-                                    </div>
-                                </form>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
+          <div class="container">
+            <a class="navbar-brand mx-auto" href="index.html">
+              <img src="images/logo.png" class="logo" style="height:2.5rem;">
+            </a>
+            <div class="navbar-collapse collapse" id="navbarsExample07">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon"></i>스마트키</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="myhistory.html"><i
+                      class="list alternate outline icon"></i>이용 내역
+                  </a>
+                </li>
+    
+                <!-- If session login -->
+    
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
+                </li>
+    
+                <li class="nav-item  dropdown">
+                  <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false"
+                    href="#">
+                    로그인
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
+                    style="right: 0 !important;width: 24rem;">
+    
+                    <form class="ui form my-3 mx-3">
+                      <div class="field">
+                        <label class="float-left">전화번호</label>
+                        <input type="text" name="first-name" placeholder="">
+                      </div>
+                      <div class="field">
+                        <label class="float-left">비밀 번호</label>
+                        <input type="text" name="last-name" placeholder="">
+                      </div>
+    
+                      <button class="ui fluid large submit button" type="submit"
+                        style="border-top: 2px solid var(--main-color);">로그인</button> <br>
+                      <div class="ul list text-center"
+                        style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
+                        <a href="./join.html">회원 가입</a><br>
+                        <a href="./findpwd.html">ID/비밀번호 찾기</a>
+                      </div>
+                    </form>
+                  </ul>
+                </li>
+              </ul>
+    
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
+    
 
     <main role="main" class="flex-shrink-0 mt-4 py-5">
-        <div class="container">
+        <div class="container mb-5 pb-5">
 
             <div class="row mt-4">
 
@@ -164,13 +161,68 @@
 
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">...</div>
+                                aria-labelledby="pills-profile-tab">
+                                <div class="ui pink segment">
+                                  <a class="ui black empty circular label"></a> 이용 가능
+                                  <a class="ui red empty circular label"></a> 이용 불가
+                                  <a class="ui yellow empty circular label"></a> 마감 예정
+                                  <a class="ui blue empty circular label"></a> 이용 중
+          
+          
+                                  <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group"
+                                    id="s-radio">
+          
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                      value='1'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio1"> 1</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                                      value='2'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio2"> 2</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                      value='3'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio3">3</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+                                      value='4'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio4">4</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off"
+                                      value='5'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio5">5</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off"
+                                      value='6'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio6">6</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off"
+                                      value='7'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio7">7</label>
+          
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off"
+                                      value='8'>
+                                    <label class="btn btn-outline-dark mr-3" for="btnradio8">8</label>
+          
+                                    <!-- if reserved => Replace class name : danget -->
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off"
+                                      value='9'>
+                                    <label class="btn btn-outline-danger mr-3 disabled" for="btnradio9">9</label>
+          
+                                  </div>
+          
+                                  <p> 이용가능: 고정석 3 / 다인석 3 / 스터디룸 6인실</p>
+          
+          
+                                </div>
+                              </div>
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                                 aria-labelledby="pills-contact-tab">
                                 <p id="msg"></p>
                             </div>
                         </div>
-                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills justify-content-center mt-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active ui secondary basic button" id="pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -228,7 +280,7 @@
 
                                 <div class="qr d-none" id="myQr_2003051">
                                     <p class="my-5 py-5 text-center my-auto align-middle ">
-                                        <img src="./images/myQr/2003021.webp" class="myQr">
+                                        <img src="./images/myQr/2003021.png" class="myQr">
                                     </p>
                                 </div>
                             </a>
@@ -255,37 +307,34 @@
 
                                 <div class="qr d-none" id="myQr_2003332">
                                     <p class="mt-5 py-5 text-center my-auto align-middle ">
-                                        <img src="./images/myQr/2003021.webp" class="myQr">
+                                        <img src="./images/myQr/2003332.png" class="myQr">
                                     </p>
                                 </div>
                             </a>
                         </div>
-
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
-
     </main>
 
 
-    <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top ">
+    <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top">
         <div class="row mt-4">
-            <div class="col">
-                <i class="coffee icon"></i>
-            </div>
-            <div class="col">
-                <i class="list alternate outline icon"></i>
-            </div>
-            <div class="col">
-                <i class="user outline icon"></i>
-            </div>
-            <div class="col">
-                <i class="qrcode icon"></i>
-            </div>
+          <div class="col">
+            <a href="index.html" class="text-white"><i class="coffee icon"></i></a>
+          </div>
+          <div class="col">
+            <a href="myhistory.html" class="text-white"><i class="list alternate outline icon"></i></a>
+          </div>
+          <div class="col">
+            <a href="join.html" class="text-white"><i class="user outline icon"></i></a>
+          </div>
+          <div class="col">
+            <a href="smartkey.html" class="text-white"><i class="qrcode icon"></i></a>
+            <div class="left floating ui mini teal label" style="left:auto; right:3vw;">5</div>
+          </div>
         </div>
-
-    </nav>
+      </nav>
 
     <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
         <div class="ui container">

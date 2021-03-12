@@ -17,6 +17,15 @@
     --text-color: #00adee;
 }
 
+.m-b-t{
+border-top: 1em solid var(--main-color) !important;
+}
+.s-b-t{
+    border-top: 1em solid var(--sub-color)  !important;
+}
+.bt-t{
+    border-top: 1em solid var(--text-color)  !important;
+}
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -40,7 +49,9 @@ body, a.nav-link{
     padding: 5em 0em;
 }
 
-
+.calendars{
+    width:22rem;
+}
 
 
 @media (min-width: 768px) {
@@ -108,24 +119,41 @@ a.nav-link:hover {
     
 }
 .carousel-control-next, .carousel-control-prev {
-    color: black;
+    color: lightgray;
     opacity: 1;
 }
 
 .carousel-indicators li {
-    background-color: gray;
+    background-color: white;
 }
 
-.table>:not(:last-child)>:last-child>*{
+.info .table>:not(:last-child)>:last-child>*{
     border-bottom: .2em solid var(--main-color);
 }
-.table thead th{
+.info .table thead th{
     border-bottom: .2em solid var(--main-color);
+}
+
+.list-group-item.active{
+    background-color :#dcddde;
+    border-color : #dcddde;
+    color:rgba(0,0,0,.6) 
 }
 
 @media only screen and (max-width: 992px) {
 
-    
+
+   .p .nav-link{
+        padding: 0.5rem;
+    }   
+}
+
+.p .nav-link{
+    width:70%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: black;
     
 }
 .logo{
@@ -169,6 +197,7 @@ a.nav-link:hover {
     width: 100%; 
     color: whitesmoke;
     text-align: center;
+    z-index:50;
  }
  .mobile-nav i{
      font-size:2rem;
