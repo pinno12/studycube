@@ -9,39 +9,26 @@
   <meta name="generator" content="Jekyll v4.1.1">
   <meta property="og:title" content="스터디큐브 독서실">
   <meta property="og:description" content="집중이 잘 되는 시간">
-  <meta property="og:image" content="images/thumbnail.png">
+  <meta property="og:image" content="images/photos/1.png">
   <title>이용내역 | 스터디큐브</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&amp;family=Noto+Sans+KR:wght@100;400;700&amp;display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-
-  <!-- 애플지도 -->
-  <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 
 
   <!-- favicon -->
@@ -75,15 +62,21 @@
 
 <body class="d-flex flex-column h-100 ">
   <header class="mb-4">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
-      <div class="container">
-        <a class="navbar-brand mx-auto" href="index.html">
+    <nav class="navbar navbar-expand-sm navbar-dark ui fixed menu " aria-label="studycube navbar" id="mynav">
+      <div class="container ">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" class="logo" style="height:2.5rem;">
         </a>
-        <div class="navbar-collapse collapse" id="navbarsExample07">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+
+        <div class="" id="navbarsExample07">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon"></i>스마트키</a>
+              <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon mr-0 pr-0"></i>
+                <div class="ui teal circular mini label" style="background-color: var(--sub-color) !important;">2</div>
+                스마트키
+              </a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="myhistory.html"><i
@@ -97,13 +90,13 @@
               <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
             </li>
 
-            <li class="nav-item  dropdown">
+            <!-- <li class="nav-item  dropdown">
               <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false"
                 href="#">
                 로그인
               </a>
               <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
-                style="right: 0 !important;width: 24rem;">
+                style="right: 0 !important;width: 21rem;">
 
                 <form class="ui form my-3 mx-3">
                   <div class="field">
@@ -124,7 +117,7 @@
                   </div>
                 </form>
               </ul>
-            </li>
+            </li> -->
           </ul>
 
         </div>
@@ -137,66 +130,98 @@
 
       <div class="row mt-4">
         <div class="col">
-          <h1 class="ui header"> <span><i class="cat icon"></i></span>이용내역 <span class="small text-muted"
+          <h1 class="ui header"> <span></span>이용내역 <span class="small text-muted"
               style="font-size:0.8rem;">MyHistory</span>
           </h1>
         </div>
       </div>
 
 
-      <div id="summary" class="row justify-content-center">
-        <div class="ui three column grid">
-          <div class="column">
-            <div class="ui card m-b-t" >
+      <div id="summary" class="row justify-content-between">
+        <!-- <div class="ui three column grid"> -->
+          <div class="col-6 col-lg-2 mb-2">
+            <div class="ui card" >
               <div class="content">
-                <div class="center aligned header"><i class="time icon"></i>시간 패키지</div>
+                <div class="center aligned header"><i class="time icon c-main"></i><br />시간 패키지</div>
                 <div class="center aligned description">
                   <p>22시간 남음</p>
                 </div>
               </div>
-              <div class="extra content text-center">
-                <small class="center aligned author">
-                  유효기간: 2021년 3월 1일~2021년 5월 1일
-                </small>
+              <div class="extra content text-center">              
+                <i class="circular hourglass half icon link tool-tip" data-content="유효기간: 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분" data-position="bottom left" data-variation="wide"></i>
               </div>
             </div>
           </div>
-          <div class="column">
-            <div class="ui card s-b-t">
+          <div class="col-6 col-lg-2 mb-2">
+            <div class="ui card">
               <div class="content">
-                <div class="center aligned header"> <i class="calendar alternate outline icon"></i>기간권</div>
+                <div class="center aligned header"> <i class="calendar alternate outline icon c-main"></i><br />기간권</div>
                 <div class="center aligned description">
                   <p>51일 남음</p>
                 </div>
               </div>
-              <div class="extra content text-center">
-                <small class="center aligned author">
-                 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분
-                </small>
+              <div class="extra content text-center">              
+                <i class="circular hourglass half icon link tool-tip" data-content="유효기간: 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분" data-position="bottom left" data-variation="wide"></i>
               </div>
             </div>
           </div>
-          <div class="column">
-            <div class="ui card bt-t">
+          <div class="col-6 col-lg-2 mb-2">
+            <div class="ui card">
               <div class="content">
-                <div class="center aligned header"><i class="archive icon"></i>사물함</div>
+                <div class="center aligned header"><i class="archive icon c-main"></i><br />사물함</div>
                 <div class="center aligned description">
                   102번 | 30일
                 </div>
               </div>
-              <div class="extra content text-center">
-                <small class="center aligned author">
-                  2021년 2월 1일 13:25분~2021년 3월 1일 15:25분
-                </small>
+              <div class="extra content text-center">              
+                <i class="circular hourglass half icon link tool-tip" data-content="유효기간: 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분" data-position="bottom left" data-variation="wide"></i>
               </div>
             </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-2">
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header"><i class="archive icon c-main"></i><br />사물함 (소)</div>
+              <div class="center aligned description">
+                106번 | 30일
+              </div>
+            </div>
+            <div class="extra content text-center">              
+              <i class="circular hourglass half icon link tool-tip" data-content="유효기간: 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분" data-position="bottom left" data-variation="wide"></i>
+            </div>
           </div>
-
-
-
+      </div>
+      <div class="col-6 col-lg-2 mb-2">
+        <div class="ui card">
+          <div class="content">
+            <div class="center aligned header"><i class="archive icon c-main"></i><br />프린터</div>
+            <div class="center aligned description">
+              94point
+            </div>
+          </div>
+          <div class="extra content text-center">              
+            <i class="circular hourglass half icon link tool-tip" data-content="유효기간: 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분" data-position="bottom left" data-variation="wide"></i>
+          </div>
+        </div>
+    </div>
+    <div class="col-6 col-lg-2 mb-2">
+      <div class="ui card">
+        <div class="content">
+          <div class="center aligned header"><i class="chair icon c-main"></i><br />좌석</div>
+          <div class="center aligned description">
+            2시간
+          </div>
+        </div>
+        <div class="extra content text-center">              
+          <i class="circular hourglass half icon link tool-tip" data-content="유효기간: 2021년 2월 1일 13:25분~2021년 3월 1일 15:25분" data-position="bottom left" data-variation="wide"></i>
         </div>
       </div>
+  </div>
+      </div>
       <div class="row mt-3">
+        
+        
+        
         <nav>
           <div class="nav nav-tabs ui secondary pointing menu" id="nav-tab" role="tablist">
             <button class="nav-link item active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -248,7 +273,8 @@
             </div>
 
             <div class="row">
-              <div class="text-center">
+              <button class="fluid ui button"><i class = "plus icon"></i>더보기</button>
+              <!-- <div class="text-center">
                 <div class="ui pagination borderless menu">
                   <a class="item">
                     1
@@ -269,7 +295,7 @@
                     12
                   </a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -288,8 +314,8 @@
             </div>
 
           </div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><i class="cat icon"></i></div>
-          <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">...<i class="cat icon"></i></div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+          <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">...</div>
           <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
             <div class="ui divided selection list">
               
@@ -324,25 +350,6 @@
 
   </main>
 
-
-  <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top">
-    <div class="row mt-4">
-      <div class="col">
-        <a href="index.html" class="text-white"><i class="coffee icon"></i></a>
-      </div>
-      <div class="col">
-        <a href="myhistory.html" class="text-white"><i class="list alternate outline icon"></i></a>
-      </div>
-      <div class="col">
-        <a href="join.html" class="text-white"><i class="user outline icon"></i></a>
-      </div>
-      <div class="col">
-        <a href="smartkey.html" class="text-white"><i class="qrcode icon"></i></a>
-        <div class="left floating ui mini teal label" style="left:auto; right:3vw;">5</div>
-      </div>
-    </div>
-  </nav>
-  
   <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
     <div class="ui container">
       <div class="row text-center">
@@ -352,11 +359,15 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+  
   <script src="./script.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+  crossorigin="anonymous"></script>
 
 </body>
 

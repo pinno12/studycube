@@ -1,3 +1,82 @@
+@media only screen and (max-width: 992px) {
+
+    #pills-tab{
+        margin-left: -2%;
+        margin-right: -2%;
+    }
+    #login-box{
+        width: 90vw ;
+    }
+#common
+    body{
+        overflow-x: hidden; 
+    }
+    .calendars, .flatpickr-calendar{
+        width:auto !important;
+    }
+
+   .p .nav-link{
+        padding: 0.5rem;
+    }   
+
+    .navbar-nav{
+        font-size:0.8rem;
+        flex-direction:row;
+    }
+
+    .nav-item{
+        padding-right:0.5rem;
+    }
+    .m-0-p-0{
+        margin-left:0; 
+        margin-right:0; 
+        padding-left:0;
+        padding-right:0;
+    }
+
+    table{
+        width:100%;
+    }
+
+    .mobile-text-s{
+        font-size:0.7rem;
+    }
+
+    .p{
+        padding-right: 0;
+    }
+
+    .nav-pills .nav-link{
+        padding-left:0;
+        padding-right:0;
+
+    }
+
+    #mynav{
+        margin-left:0; 
+        margin-right:0; 
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .logo{
+        height:2rem;
+
+    }
+
+    .navbar-brand{
+        margin-right:0;
+    }
+
+    .tab-pane.fade>img{
+        width:90vw !important;
+    }     
+    
+}
+
+.mobile-w{
+    width: 50vw;
+}
 /* Color Set*/
 .c-main{
     color: #0076bd;
@@ -17,6 +96,7 @@
     --text-color: #00adee;
 }
 
+
 .m-b-t{
 border-top: 1em solid var(--main-color) !important;
 }
@@ -27,11 +107,12 @@ border-top: 1em solid var(--main-color) !important;
     border-top: 1em solid var(--text-color)  !important;
 }
 
-body {
-    font-family: 'Noto Sans KR', sans-serif;
+
+.ui.styled.accordion{
+    width:100% !important;
 }
 
-body, a.nav-link{
+.ui.menu, .ui.header,body, a.nav-link{
     font-family: 'Noto Sans KR' !important;
 }
 
@@ -58,7 +139,13 @@ body, a.nav-link{
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+
 }
+
+.tab-pane.fade>img{
+    width:30vw;
+}  
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans KR', sans-serif;
@@ -104,6 +191,11 @@ a.nav-link:hover {
     height: 100%;
 }
 
+.flatpickr-day.selected, #myfooter, #mynav, .ui.basic.active.button, .ui.basic.buttons .active.button, .list-group-item.active{
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
 /* INDEX */
 
 
@@ -112,11 +204,16 @@ a.nav-link:hover {
 }
 .carousel-item>img {
     /* position: absolute; */
+    border-radius:0.3rem;
     top: 0;
     left: 0;
     width: inherit;
     /* min-width: 100%; */
-    
+}
+
+
+.indicator{
+    font-size: 0.5rem !important;
 }
 .carousel-control-next, .carousel-control-prev {
     color: lightgray;
@@ -140,25 +237,28 @@ a.nav-link:hover {
     color:rgba(0,0,0,.6) 
 }
 
-@media only screen and (max-width: 992px) {
-
-
-   .p .nav-link{
-        padding: 0.5rem;
-    }   
+#login-box{
+    right: 0 !important;
+    width: 21rem;
 }
+
 
 .p .nav-link{
     width:70%;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: black;
+    background-color: var(--main-color);
+    border:none;
     
 }
-.logo{
-    margin-left:-2rem;
+
+.flatpickr-day.selected{
+    border-color: var(--main-color);
 }
+/* .logo{
+    margin-left:-2rem;
+} */
 
 .full-width {
     width: 100%;
@@ -221,6 +321,13 @@ a.nav-link:hover {
  input[type] {
     border: 3px solid var(--main-color);
   }
+  /* #v-pills-messages{
+    background-image: url('https://postfiles.pstatic.net/MjAyMTAzMThfMzUg/MDAxNjE2MDQ2OTE0OTAx.Ti5DcGoa-Gn3_VnqF7tpbQ1nLXLS5H5N8AvC7pHjI24g.gu39ZCpjaW-jLj9QQF_fLNk4FaL1cFwzX4oHVFebn5Yg.JPEG.ameri1987/image.jpg?type=w1'); 
+    background-size: cover; 
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    position: absolute;
+  } */
 
 
   #join{
@@ -242,3 +349,4 @@ a.nav-link:hover {
 .myQr{
     width:5rem;
 }
+

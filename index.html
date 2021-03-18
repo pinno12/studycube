@@ -23,11 +23,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
+ 
+  
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -72,15 +69,21 @@
 
 <body class="d-flex flex-column h-100 ">
   <header class="mb-4">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
-      <div class="container">
-        <a class="navbar-brand mx-auto" href="index.html">
+    <nav class="navbar navbar-expand-sm navbar-dark ui fixed menu " aria-label="studycube navbar" id="mynav">
+      <div class="container ">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" class="logo" style="height:2.5rem;">
         </a>
-        <div class="navbar-collapse collapse" id="navbarsExample07">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+
+        <div class="" id="navbarsExample07">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon"></i>스마트키</a>
+              <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon mr-0 pr-0"></i>
+                <div class="ui teal circular mini label" style="background-color: var(--sub-color) !important;">2</div>
+                스마트키
+              </a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="myhistory.html"><i
@@ -94,13 +97,13 @@
               <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
             </li>
 
-            <li class="nav-item  dropdown">
+            <!-- <li class="nav-item  dropdown">
               <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false"
                 href="#">
                 로그인
               </a>
               <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
-                style="right: 0 !important;width: 24rem;">
+                style="right: 0 !important;width: 21rem;">
 
                 <form class="ui form my-3 mx-3">
                   <div class="field">
@@ -121,7 +124,7 @@
                   </div>
                 </form>
               </ul>
-            </li>
+            </li> -->
           </ul>
 
         </div>
@@ -130,7 +133,10 @@
   </header>
 
   <main role="main" class="flex-shrink-0 mt-4 pt-4">
+
     <div class="container mb-5 pb-5">
+
+
       <article class="info">
         <div class="ui top attached tabular menu">
           <a class="item active" data-tab="info">소개</a>
@@ -140,50 +146,80 @@
         <div class="ui bottom attached tab segment active" data-tab="info">
           <div class="row">
             <div class="col-lg-3">
-              <div id="myCarousel" class="ui black segment carousel slide m-0 p-0" data-ride="carousel"
-                data-interval="false" style="border-top: 2px solid var(--main-color) !important">
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                  <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                </ol>
+              <div id="myCarousel" class="carousel slide carousel-fade" data-interval="0" data-bs-ride="carousel">
+                <div class="carousel-indicators mb-2">
+                  <a data-bs-target="#myCarousel" data-bs-slide-to="0"
+                    class="active ui grey empty circular label indicator" aria-current="true" aria-label="Slide 1"></a>
+                  <a data-bs-target="#myCarousel" data-bs-slide-to="1" class="ui grey empty circular label indicator"
+                    aria-label="Slide 2"></a>
+                  <a data-bs-target="#myCarousel" data-bs-slide-to="2" class="ui grey empty circular label indicator"
+                    aria-label="Slide 3"></a>
+                </div>
+
                 <div class="carousel-inner">
-                  <div class="carousel-item bg-white active text-center">
-                    <img src="images/photos/1.png" class="">
+                  <div class="carousel-item active ">
+                    <img src="images/photos/1.png" class="d-block w-100">
 
                   </div>
-                  <div class="carousel-item bg-white text-center">
-                    <img src="images/photos/2.png">
+                  <div class="carousel-item">
+                    <img src="images/photos/2.png" class="d-block w-100">
                   </div>
-                  <div class="carousel-item bg-white">
-                    <img src="images/photos/3.png">
+                  <div class="carousel-item">
+                    <img src="images/photos/3.png" class="d-block w-100">
 
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-target="#myCarousel"
+                  data-bs-slide="prev">
+
                   <i class="chevron left icon"></i>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-target="#myCarousel"
+                  data-bs-slide="next">
                   <i class="chevron right icon"></i>
                   <span class="sr-only">Next</span>
                 </a>
+
               </div>
 
             </div>
             <div class="col-lg-9">
-              <p class="ui dividing header fs-1">
-                스터디큐브 독서실 <span class="fs-5"> ☎️02-319-9999 | 서울시 성북구 오키도키로 333 </span>
+              <div class="ui dividing header fs-1">
+                THE오르다 스터디카페 발산센터
+
+                <p id="phone" class="fs-5 mb-0">
+                  전화: 02-319-9999
+                </p>
+                <p id="address" class="fs-5">
+                  경기 성남시 수정구 위례동로 141 (창곡동) 우성메디피아 10층
+                </p>
+              </div>
+
+              <p>
+                프리미엄 스터디카페!! <br />
+                THE오르다 스터디카페 발산센터입니다.
+                운영시간 : 00:00~24:00
+                집중하고 싶은 시간이라면 24시간 언제라도!!!
+                원하는만큼 이용하는 시간제 운영
+                스마트키(바코드)를 통한 멤버십 전용 출입
+                개인적 취향을 반영한 좌석 운영!!
+                No.1 보안업체 ADT CAPS와 함께 24시간 철저한 보안관리
+                No.1 방역업체 세스코와 함께 완벽한 방역으로 관리
+                개인 사물함 및 철저한 출입시스템, PC및 복합기 제공, 더불어 향이 고급스러운 커피와 티백 티,
+                음료와 다과를 쾌적하고 분위기 있는 Cafeteria에서 즐기며 휴식하실 수 있습니다.
+                우리 더오르다 스터디카페 발산센터는
+                당신이 오롯이 집중할 수 있는 한시간, 한시간을 소중하게 생각합니다.
+
               </p>
 
-              공지사항입니다. 오늘도 내일도 스터디큐브 독서실입니다.
             </div>
           </div>
         </div>
 
         <div class="ui bottom attached tab segment" data-tab="price">
-          <table class="table text-center">
+          <table class="table">
             <thead>
               <tr>
 
@@ -205,8 +241,8 @@
                 <td>4시간: 5,000원</td>
               </tr>
               <tr>
-                <th scope="row">6인 스터디룸</th>
-                <!-- 연장요금과 같을 때 colspan=2로 하기. 이 룰은 자율적으로 사내에서 정할 것 -->
+                <td scope="row">6인 스터디룸</th>
+                  <!-- 연장요금과 같을 때 colspan=2로 하기. 이 룰은 자율적으로 사내에서 정할 것 -->
                 <td colspan="2">4시간: 8000원</td>
               </tr>
               <tr>
@@ -231,7 +267,10 @@
 
         </div>
         <div class="ui bottom attached tab segment" data-tab="map">
-          <div id="map" style="width:100%;height:350px;"></div>
+
+          <img src = "images/map_1.png" style="width:100%;height:350px;">
+          <!-- kakao map -->
+          <!-- <div id="map" style="width:100%;height:350px;"></div> -->
         </div>
       </article>
 
@@ -239,73 +278,73 @@
 
 
       <ul class="nav nav-pills nav-justified my-5" id="pills-tab" role="tablist">
-        <li class="nav-item p" role="presentation">
-          <button class="nav-link card mx-auto" style="border-top: 1em solid var(--main-color)" id="pills-home-tab"
-            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-            aria-selected="true" onclick="show_pays($(this).attr('id'))">
+        <li class="nav-item p d-flex" role="presentation">
+          <button class="nav-link card mx-auto flex-fill" id="pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+            onclick="show_pays($(this).attr('id'))">
             <div class="content text-center mx-auto">
               <div class="header"> <i class="chair icon fs-1"></i></div>
-              <div class="description d-none d-sm-block">
+              <div class="description mobile-text-s">
                 <p>좌석 예약</p>
               </div>
             </div>
           </button>
         </li>
-        <li class="nav-item p" role="presentation">
-          <button class="nav-link card mx-auto" style="border-top: 1em solid #db2828" id="pills-profile-tab"
-            data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-            aria-selected="false" onclick="show_pays($(this).attr('id'))">
+        <li class="nav-item p d-flex" role="presentation">
+          <button class="nav-link card mx-auto flex-fill" id="pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"
+            onclick="show_pays($(this).attr('id'))">
             <div class="content text-center mx-auto">
               <div class="header">
                 <i class="clock icon fs-1"></i>
               </div>
-              <div class="description d-none d-sm-block ">
+              <div class="description mobile-text-s ">
                 <p>시간 패키지 충전</p>
               </div>
             </div>
           </button>
         </li>
-        <li class="nav-item p" role="presentation">
-          <button class="nav-link card mx-auto" style="border-top: 1em solid var(--text-color)" id="pills-contact-tab"
-            data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-            aria-selected="false" onclick="show_pays($(this).attr('id'))">
+        <li class="nav-item p d-flex" role="presentation">
+          <button class="nav-link card mx-auto flex-fill" id="pills-contact-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+            onclick="show_pays($(this).attr('id'))">
             <div class="content text-center mx-auto">
               <div class="header">
                 <i class="calendar alternate outline icon fs-1"></i>
               </div>
-              <div class="description d-none d-sm-block">
+              <div class="description mobile-text-s">
                 <p>기간권 충전</p>
               </div>
             </div>
 
           </button>
         </li>
-        <li class="nav-item p" role="presentation">
-          <button class="nav-link card mx-auto" style="border-top: 1em solid var(--sub-color)" id="pills-4-tab"
-            data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4"
-            aria-selected="false" onclick="show_pays($(this).attr('id'))">
+        <li class="nav-item p    d-flex" role="presentation">
+          <button class="nav-link card mx-auto flex-fill" id="pills-4-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false"
+            onclick="show_pays($(this).attr('id'))">
 
 
             <div class="content text-center mx-auto">
               <div class="header">
                 <i class="archive icon fs-1"></i>
               </div>
-              <div class="description d-none d-sm-block">
+              <div class="description mobile-text-s">
                 <p>사물함 신청</p>
               </div>
             </div>
 
           </button>
         </li>
-        <li class="nav-item p" role="presentation">
-          <button class="nav-link card mx-auto" style="border-top: 1em solid black" id="pills-5-tab"
-            data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5"
-            aria-selected="false" onclick="show_pays($(this).attr('id'))">
+        <li class="nav-item p d-flex" role="presentation">
+          <button class="nav-link card mx-auto flex-fill" id="pills-5-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false"
+            onclick="show_pays($(this).attr('id'))">
             <div class="content text-center mx-auto">
               <div class="header">
                 <i class="mug hot icon fs-1"></i>
               </div>
-              <div class="description d-none d-sm-block">
+              <div class="description mobile-text-s">
                 <p>쇼핑하기</p>
               </div>
             </div>
@@ -318,8 +357,8 @@
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
           <div class="row">
-            <div class="col-lg-4">
-              <h5 class="ui dividing header">종류 선택</h5>
+            <div class="col-lg-2">
+              <h5 class="ui dividing header">좌석 타입 선택</h5>
               <div class="list-group" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list"
                   href="#list-home" role="tab" aria-controls="home" onclick="select_first($(this).attr('id'))">자유석</a>
@@ -333,11 +372,11 @@
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-10">
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                   <div class="row">
-                    <div class="col-lg-5 offset-lg-1 second_column" id="">
+                    <div class="col-lg-4 second_column" id="">
                       <div id="show_cal" class="d-none">
                         <h5 class="ui dividing header">시작 일시</h5>
                         <input type="text" id="calendar-oneday" class="calendars">
@@ -347,74 +386,119 @@
                       <div id="show_hour" class="d-none">
                         <h5 class="ui dividing header mt-3">이용 시간</h5>
 
-                        <button class="ui red tertiary button" onclick="select_hour($(this).attr('id'))"
+                        <button class="ui tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h1">1시간</button>
-                        <button class="ui orange tertiary button" onclick="select_hour($(this).attr('id'))"
+                        <button class="ui tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h2">2시간</button>
-                        <button class="ui yellow tertiary button" onclick="select_hour($(this).attr('id'))"
+                        <button class="ui  tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h3">3시간</button>
-                        <button class="ui olive tertiary button" onclick="select_hour($(this).attr('id'))"
+                        <button class="ui  tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h4">4시간</button>
-                        <button class="ui green tertiary button" onclick="select_hour($(this).attr('id'))"
+                        <button class="ui  tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h5">6시간</button>
-                        <button class="ui teal tertiary button" onclick="select_hour($(this).attr('id'))"
+                        <button class="ui  tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h6">12시간</button>
                       </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1 d-none" id="show_seat">
+                    <div class="col-lg-8  d-none" id="show_seat">
                       <h5 class="ui dividing header">자리 선택</h5>
-                      <!-- <button class="ui blue button">Blue</button> -->
-                      <div class="ui pink segment">
-                        <a class="ui black empty circular label"></a> 이용 가능
-                        <a class="ui red empty circular label"></a> 이용 불가
-                        <a class="ui yellow empty circular label"></a> 마감 예정
-                        <a class="ui blue empty circular label"></a> 이용 중
+
+                      <div class="">
 
 
-                        <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group"
-                          id="s-radio">
 
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                            value='1'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio1"> 1</label>
+                        <div class="tab-content" id="v-pills-tabContent">
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
-                            value='2'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio2"> 2</label>
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="images/floors/1.jpg">
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="images/floors/2.jpg">
+                          </div>
+                          <div class="tab-pane fade show active" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                            value='3'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio3">3</label>
+                            <a class="ui black empty circular label"></a> 이용 가능
+                            <a class="ui red empty circular label"></a> 이용 불가
+                            <a class="ui gray empty circular label"></a> 마감 예정
+                            <a class="ui blue empty circular label" style="background-color: var(--main-color);"></a> 이용
+                            중
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
-                            value='4'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio4">4</label>
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off"
-                            value='5'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio5">5</label>
+                            <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group"
+                              id="s-radio">
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off"
-                            value='6'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio6">6</label>
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off"
-                            value='7'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio7">7</label>
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                value='1'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio1"> 1</label>
 
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off"
-                            value='8'>
-                          <label class="btn btn-outline-dark mr-3" for="btnradio8">8</label>
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                                value='2'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio2"> 2</label>
 
-                          <!-- if reserved => Replace class name : danget -->
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off"
-                            value='9'>
-                          <label class="btn btn-outline-danger mr-3 disabled" for="btnradio9">9</label>
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                value='3'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio3">3</label>
 
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+                                value='4'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio4">4</label>
+
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off"
+                                value='5'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio5">5</label>
+
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off"
+                                value='6'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio6">6</label>
+
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off"
+                                value='7'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio7">7</label>
+
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off"
+                                value='8'>
+                              <label class="btn btn-outline-dark mr-3" for="btnradio8">8</label>
+
+                              <!-- if reserved => Replace class name : danget -->
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off"
+                                value='9'>
+                              <label class="btn btn-outline-danger mr-3 disabled" for="btnradio9">9</label>
+
+                            </div>
+
+                            <p> 이용가능: 고정석 3 / 다인석 3 / 스터디룸 6인실</p>
+
+
+
+                          </div>
                         </div>
 
-                        <p> 이용가능: 고정석 3 / 다인석 3 / 스터디룸 6인실</p>
+                        <ul class="nav nav-pills mb-3 ui text menu" id="v-pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <a class="item" id="v-pills-profile-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                              aria-selected="false">1층</a>
+
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="item" id="v-pills-messages-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-messages" type="button" role="tab"
+                              aria-controls="v-pills-messages" aria-selected="false">2층</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="item active" id="v-pills-settings-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-settings" type="button" role="tab"
+                              aria-controls="v-pills-settings" aria-selected="false">3층</a>
+                          </li>
+
+                        </ul>
+
+
 
 
                       </div>
@@ -434,21 +518,21 @@
 
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
           <div id="times" class="">
-            <button class="ui red tertiary button" onclick="select_times($(this).attr('id'))" id="20시간">
-              <span class="badge bg-primary text-wrap ui red label fw-bold">20시간</span>
+            <button class="ui  tertiary button" onclick="select_times($(this).attr('id'))" id="20시간">
+              <span class="badge bg-primary text-wrap ui black label fw-bold">20시간</span>
               <span class="fw-normal"> 28,000원 </span>
               <span class="fw-light ui small text"> 유효기간 90일 </span>
             </button>
 
-            <button class="ui orange tertiary button" onclick="select_times($(this).attr('id'))" id="30시간">
+            <button class="ui  tertiary button" onclick="select_times($(this).attr('id'))" id="30시간">
 
-              <span class="badge bg-primary text-wrap ui orange label fw-bold">30시간</span>
+              <span class="badge bg-primary text-wrap ui black label fw-bold">30시간</span>
               <span class="fw-normal"> 28,000원 </span>
               <span class="fw-light ui small text"> 유효기간 90일 </span>
 
             </button>
-            <button class="ui yellow tertiary button" onclick="select_times($(this).attr('id'))" id="40시간">
-              <span class="badge bg-primary text-wrap ui yellow label fw-bold">40시간</span>
+            <button class="ui tertiary button" onclick="select_times($(this).attr('id'))" id="40시간">
+              <span class="badge bg-primary text-wrap ui black label fw-bold">40시간</span>
               <span class="fw-normal"> 28,000원 </span>
               <span class="fw-light ui small text"> 유효기간 90일 </span>
             </button>
@@ -458,18 +542,18 @@
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
           <div id="days" class="">
-            <button class="ui red tertiary button" onclick="select_days($(this).attr('id'))" id="1일">
+            <button class="ui  tertiary button" onclick="select_days($(this).attr('id'))" id="1일">
               <span class="badge bg-primary text-wrap ui black label fw-bold">종일권 (하루)</span>
               <span class="fw-normal"> 10,000원 </span>
               <span class="fw-light ui small text"> </span>
             </button>
 
-            <button class="ui orange tertiary button" onclick="select_days($(this).attr('id'))" id="14일">
+            <button class="ui  tertiary button" onclick="select_days($(this).attr('id'))" id="14일">
 
               <span class="badge bg-primary text-wrap ui black label fw-bold">2주 (14일)</span>
               <span class="fw-normal"> 63,000원 </span>
             </button>
-            <button class="ui yellow tertiary button" onclick="select_days($(this).attr('id'))" id="28일">
+            <button class="ui  tertiary button" onclick="select_days($(this).attr('id'))" id="28일">
               <span class="badge bg-primary text-wrap ui black label fw-bold">4주 (28일)</span>
               <span class="fw-normal"> 120,000원 </span>
 
@@ -479,50 +563,78 @@
         </div>
         <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
           <div class="row">
-            <div id="show_hour" class="col-lg-4">
-              <h5 class="ui dividing header ">이용 기간</h5>
-              <button class="ui red tertiary button" onclick="select_weeks_locker($(this).attr('id'))"
-                id="2주">2주</button>
-              <button class="ui orange tertiary button" onclick="select_weeks_locker($(this).attr('id'))"
-                id="4주">4주</button>
+            <!-- <div class=""> -->
 
-            </div>
+            <div class="col-lg-2">
+              <div class="nav flex-column nav-pills me-3" id="a-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active ui basic button" id="a-pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#a-pills-home" type="button" role="tab" aria-controls="a-pills-home"
+                  aria-selected="true">작은 사물함</button>
+                <button class="nav-link ui basic button" id="a-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#a-pills-profile" type="button" role="tab" aria-controls="a-pills-profile"
+                  aria-selected="false">큰 사물함</buttona>
 
-            <div class="col-lg-4 second_column d-none" id="locker-cal">
-              <div id="show_cal" class="">
-                <h5 class="ui dividing header">이용 날짜</h5>
-                <input type="text" id="calendar-range" class="calendars">
               </div>
             </div>
+            <div class="tab-content col-lg-10" id="a-pills-tabContent">
+              <div class="tab-pane fade show active" id="a-pills-home" role="tabpanel"
+                aria-labelledby="a-pills-home-tab">
+                <div class="row">
+                  <div id="show_hour" class="col-lg-2">
+                    <h5 class="ui dividing header ">이용 기간</h5>
+                    <button class="ui tertiary button" onclick="select_weeks_locker($(this).attr('id'))"
+                      id="2주">2주</button>
+                    <button class="ui  tertiary button" onclick="select_weeks_locker($(this).attr('id'))"
+                      id="4주">4주</button>
 
-            <div class="col-lg-4 d-none" id="show_locker">
-              <h5 class="ui dividing header d-none">사물함 선택</h5>
-              <!-- <button class="ui blue button">Blue</button> -->
-              <div class="ui pink segment">
-                <a class="ui black empty circular label"></a> 이용 가능
-                <a class="ui red empty circular label"></a> 이용 중
-                <a class="ui yellow empty circular label"></a> 마감 예정
-                <a class="ui blue empty circular label"></a> 예약
-                <a class="ui green empty circular label"></a> 이용 불가
+                  </div>
+
+                  <div class="col-lg-4 second_column d-none" id="locker-cal">
+                    <div id="show_cal" class="">
+                      <h5 class="ui dividing header">이용 날짜</h5>
+                      <input type="text" id="calendar-range" class="calendars">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 d-none" id="show_locker">
+                    <h5 class="ui dividing header">사물함 선택</h5>
+
+                    <div class="ui segment">
+                      <a class="ui black empty circular label"></a> 이용 가능
+                      <a class="ui empty circular label"style = "background-color: var(--main-color);"></a> 이용 중
+                      <a class="ui empty circular label" style = "background-color: var(--text-color);"></a> 마감 예정
+                      <a class="ui empty circular label" style = "background-color: var(--sub-color);"></a> 예약
+                      <a class="ui red empty circular label"></a> 이용 불가
 
 
-                <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group" id="l-radio">
-                  <input type="radio" class="btn-check" name="locker-radio" id="l1" autocomplete="off" value="1">
-                  <label class="btn btn-outline-dark mr-3" for="l1"> 1</label>
+                      <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group"
+                        id="l-radio">
+                        <input type="radio" class="btn-check" name="locker-radio" id="l1" autocomplete="off" value="1">
+                        <label class="btn btn-outline-dark mr-3" for="l1"> 1</label>
 
-                  <input type="radio" class="btn-check" name="locker-radio" id="l2" autocomplete="off" value="2">
-                  <label class="btn btn-outline-dark mr-3" for="l2"> 2</label>
+                        <input type="radio" class="btn-check" name="locker-radio" id="l2" autocomplete="off" value="2">
+                        <label class="btn btn-outline-dark mr-3" for="l2"> 2</label>
 
-                  <input type="radio" class="btn-check" name="locker-radio" id="l3" autocomplete="off" value='3'>
-                  <label class="btn btn-outline-dark mr-3" for="l3">3</label>
+                        <input type="radio" class="btn-check" name="locker-radio" id="l3" autocomplete="off" value='3'>
+                        <label class="btn btn-outline-dark mr-3" for="l3">3</label>
 
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="tab-pane fade" id="a-pills-profile" role="tabpanel" aria-labelledby="a-pills-profile-tab">💦💦
+              </div>
 
+            </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab"><i class="cat icon"></i>
+
+
+
+
+        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab"><i
+            class="headphones icon"></i>
         </div>
       </div>
       <div class="ui black segment my-5 full-width d-none" id="pay-box">
@@ -540,17 +652,26 @@
           </div>
           <!-- times package -->
 
-          <table class="table d-none col-lg-4 pay" id="_times">
+          <table class="table d-none col-lg-4 pay w-100" id="_times">
+            <colgroup>
+              <col span="1" style="width: 50%;">
+              <col span="1" style="width: 50%;">
+
+            </colgroup>
             <thead>
               <tr>
-                <th scope="col" class="text-left">구매 전</th>
-                <th scope="col" class="text-right">0시간</th>
+                <th scope="col" class="text-left mobile-w">구매 전</th>
+                <th scope="col" class="text-right mobile-w">0시간</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">구매 후</th>
                 <td scope="col" class="text-right" id="_time_added"></td>
+              </tr>
+              <tr>
+                <th scope="row">합계</th>
+                <td scope="col" class="text-right" id=>333원</td>
               </tr>
             </tbody>
 
@@ -559,8 +680,8 @@
           <table class="table d-none col-lg-4" id="_days_t">
             <thead>
               <tr>
-                <th scope="col" class="text-left">구매 전</th>
-                <th scope="col" class="text-right">0시간</th>
+                <th scope="col" class="text-left mobile-w">구매 전</th>
+                <th scope="col" class="text-right mobile-w">0시간</th>
               </tr>
             </thead>
             <tbody>
@@ -579,7 +700,7 @@
             <span id="_locker_weeks" class="category c-text fs-5"></span>
             <span id="_locker_num" class="c-text fs-5">&nbsp;</span>
             <span id="select_days_locker" class="fw-light text-secondary"></span>
-            <span id="" class="fs-5 fst-italic d-none total">3000원</span>
+            <span id="" class="fs-5 fst-italic total">3000원</span>
           </div>
 
           </p>
@@ -590,62 +711,48 @@
           </div>
 
           <div class="row justify-content-between">
-            <div class="ui animated button col" tabindex="0" id="time_pay">
-              <div class="visible content">시간 패키지</div>
-              <div class="hidden content">
-                <i class="clock icon"></i>
-              </div>
+            <div class="ui basic button col" tabindex="0" id="time_pay">
+              <i class="clock icon"></i> 시간 패키지
+
             </div>
-            <div class="ui vertical animated button col" tabindex="0">
-              <div class="hidden content">계좌번호:3333-3333-4733</div>
-              <div class="visible content">
-                계좌이체
-              </div>
+            <div class="ui basic button col" tabindex="0">
+              💶계좌이체
             </div>
 
-            <button class="ui basic button col">
+            <div class="ui basic button col">
               <i class="credit card icon"></i>
               신용카드
-            </button>
+            </div>
           </div>
         </div>
       </div>
   </main>
 
 
-  <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top">
-    <div class="row mt-4">
-      <div class="col">
-        <a href="index.html" class="text-white"><i class="coffee icon"></i></a>
-      </div>
-      <div class="col">
-        <a href="myhistory.html" class="text-white"><i class="list alternate outline icon"></i></a>
-      </div>
-      <div class="col">
-        <a href="join.html" class="text-white"><i class="user outline icon"></i></a>
-      </div>
-      <div class="col">
-        <a href="smartkey.html" class="text-white"><i class="qrcode icon"></i></a>
-        <div class="left floating ui mini teal label" style="left:auto; right:3vw;">5</div>
-      </div>
-    </div>
-  </nav>
-  <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
+
+  <footer class="ui inverted vertical footer segment footer mt-auto py-3" id="myfooter">
     <div class="ui container">
       <div class="row text-center">
         <div class="container-fluid">
           <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
-          | <a href="www.jaview.ga" class="text-left"><small class="text-muted">HOSTED BY TOBESMART</small></a>
-          | <a href="www.jaview.ga"><small class="text-muted">DESIGNED BY JAVIEW</small></a>
+          | <a href="www.jaview.ga" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
+          | <a href="www.jaview.ga"><small class="text-light">DESIGNED BY JAVIEW</small></a>
 
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 
+  <!-- You MUST include jQuery before Fomantic -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
   <!-- Kakao Map -->
 
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d9023b7fdde1125047074283e2b4ddf8"></script>
+  <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d9023b7fdde1125047074283e2b4ddf8"></script>
   <script>
     var container = document.getElementById('map');
     var options = {
@@ -656,7 +763,7 @@
     var map = new kakao.maps.Map(container, options);
 
 
-  </script>
+  </script> -->
 
 
   <script src="./script.js"></script>
@@ -724,18 +831,13 @@
 
     // });
 
-
-
+    var myCarousel = document.querySelector('#myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 0
+    })
 
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
 
-  <!-- You MUST include jQuery before Fomantic -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
 </body>
 
 </html>
