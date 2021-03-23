@@ -73,7 +73,16 @@
     }     
     
 }
+/* 
+.ui.tertiary.button:focus{
+    border-bottom: 8px solid var(--main-color)
+} */
 
+.btn-check:active+.btn-outline-dark, .btn-check:checked+.btn-outline-dark, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show, .btn-outline-dark:active{
+
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
 .mobile-w{
     width: 50vw;
 }
@@ -96,6 +105,10 @@
     --text-color: #00adee;
 }
 
+.bg-m{
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
 
 .m-b-t{
 border-top: 1em solid var(--main-color) !important;
