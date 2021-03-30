@@ -23,8 +23,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
- 
-  
+
+
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -54,10 +54,9 @@
   <meta name="theme-color" content="#ffffff">
 
 
-  <!-- Index -->
+  <!-- Calendar lib. Flatpickr. Only for Index -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" /> -->
   <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
   <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
 
@@ -74,8 +73,6 @@
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" class="logo" style="height:2.5rem;">
         </a>
-
-
         <div class="" id="navbarsExample07">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
@@ -133,10 +130,7 @@
   </header>
 
   <main role="main" class="flex-shrink-0 mt-4 pt-4">
-
     <div class="container mb-5 pb-5">
-
-
       <article class="info">
         <div class="ui top attached tabular menu">
           <a class="item active" data-tab="info">소개</a>
@@ -155,24 +149,19 @@
                   <a data-bs-target="#myCarousel" data-bs-slide-to="2" class="ui grey empty circular label indicator"
                     aria-label="Slide 3"></a>
                 </div>
-
                 <div class="carousel-inner">
                   <div class="carousel-item active ">
                     <img src="images/photos/1.png" class="d-block w-100">
-
                   </div>
                   <div class="carousel-item">
                     <img src="images/photos/2.png" class="d-block w-100">
                   </div>
                   <div class="carousel-item">
                     <img src="images/photos/3.png" class="d-block w-100">
-
                   </div>
                 </div>
-
                 <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-target="#myCarousel"
                   data-bs-slide="prev">
-
                   <i class="chevron left icon"></i>
                   <span class="sr-only">Previous</span>
                 </a>
@@ -181,9 +170,7 @@
                   <i class="chevron right icon"></i>
                   <span class="sr-only">Next</span>
                 </a>
-
               </div>
-
             </div>
             <div class="col-lg-9">
               <div class="ui dividing header fs-1">
@@ -211,9 +198,7 @@
                 음료와 다과를 쾌적하고 분위기 있는 Cafeteria에서 즐기며 휴식하실 수 있습니다.
                 우리 더오르다 스터디카페 발산센터는
                 당신이 오롯이 집중할 수 있는 한시간, 한시간을 소중하게 생각합니다.
-
               </p>
-
             </div>
           </div>
         </div>
@@ -222,39 +207,33 @@
           <table class="table">
             <thead>
               <tr>
-
                 <th scope="col">좌석 타입</th>
                 <th scope="col">기본 요금</th>
                 <th scope="col">연장 요금</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <!-- Rowspan number shoud be customized -->
+              <tr>             
                 <td scope="row" rowspan="2">자유석</td>
                 <td>2시간: 3,000원</td>
                 <td>2시간: 3,000원</td>
               </tr>
-              <tr>
-                <!-- <th scope="row">2</th> -->
+              <tr> 
                 <td>4시간: 5,000원</td>
                 <td>4시간: 5,000원</td>
               </tr>
               <tr>
                 <td scope="row">6인 스터디룸</th>
-                  <!-- 연장요금과 같을 때 colspan=2로 하기. 이 룰은 자율적으로 사내에서 정할 것 -->
+                 <!-- 연장요금과 같을 때 colspan=2로 하기. 이 룰은 자율적으로 사내에서 정할 것 -->
                 <td colspan="2">4시간: 8000원</td>
               </tr>
-              <tr>
-                <!-- Rowspan number shoud be customized -->
+              <tr>  
                 <td scope="row" rowspan="2">시간 패키지</td>
                 <td colspan="2">20시간 35,000원</td>
-                <!-- <td>2시간: 3,000원</td> -->
               </tr>
               <tr>
                 <td colspan="2">30시간: 50,000원</td>
               </tr>
-
               <tr>
                 <td scope="row" rowspan="2">기간권</td>
                 <td colspan="2">1주(7일): 50,000원</td>
@@ -267,15 +246,13 @@
 
         </div>
         <div class="ui bottom attached tab segment" data-tab="map">
-
-          <img src = "images/map_1.png" style="width:100%;height:350px;">
-          <!-- kakao map -->
+          <!-- 예시 이미지 -->
+          <img src="images/map_1.png" style="width:100%;height:350px;">
+          
+          <!-- kakao map 카카오맵 넣어주세요-->
           <!-- <div id="map" style="width:100%;height:350px;"></div> -->
         </div>
       </article>
-
-
-
 
       <ul class="nav nav-pills nav-justified my-5" id="pills-tab" role="tablist">
         <li class="nav-item p d-flex" role="presentation">
@@ -323,8 +300,6 @@
           <button class="nav-link card mx-auto flex-fill" id="pills-4-tab" data-bs-toggle="pill"
             data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false"
             onclick="show_pays($(this).attr('id'))">
-
-
             <div class="content text-center mx-auto">
               <div class="header">
                 <i class="archive icon fs-1"></i>
@@ -333,7 +308,6 @@
                 <p>사물함 신청</p>
               </div>
             </div>
-
           </button>
         </li>
         <li class="nav-item p d-flex" role="presentation">
@@ -350,25 +324,22 @@
             </div>
           </button>
         </li>
-
       </ul>
-      <!-- <div class="ui horizontal divider"><i class="chair icon"></i></div> -->
+
       <div class="tab-content mt-4 d-none" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
           <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 mb-3">
               <h5 class="ui dividing header">좌석 타입 선택</h5>
               <div class="list-group" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list"
-                  href="#list-home" role="tab" aria-controls="home" onclick="select_first($(this).attr('id'))">자유석</a>
+                  href="#list-home" role="tab" aria-controls="home" onclick="select_seat($(this).attr('id'))">자유석</a>
                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
-                  href="#list-profile" role="tab" aria-controls="profile" onclick="select_first($(this).attr('id'))">6인
+                  href="#list-profile" role="tab" aria-controls="profile" onclick="select_seat($(this).attr('id'))">6인
                   스터디룸</a>
                 <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
                   href="#list-messages" role="tab" aria-controls="messages"
-                  onclick="select_first($(this).attr('id'))">1인 지정 좌석</a>
-
+                  onclick="select_seat($(this).attr('id'))">1인 지정 좌석</a>
               </div>
             </div>
 
@@ -380,12 +351,9 @@
                       <div id="show_cal" class="d-none">
                         <h5 class="ui dividing header">시작 일시</h5>
                         <input type="text" id="calendar-oneday" class="calendars">
-                      </div>
-                      <!-- <input type="text" id="calendar-range"> -->
-                      <!-- document.getElementById('calendar-range').value -->
-                      <div id="show_hour" class="d-none">
+                      </div>                     
+                      <div id="show_hour" class="d-none mb-3">
                         <h5 class="ui dividing header mt-3">이용 시간</h5>
-
                         <button class="ui tertiary button" onclick="select_hour($(this).attr('id'))"
                           id="h1">1시간</button>
                         <button class="ui tertiary button" onclick="select_hour($(this).attr('id'))"
@@ -402,14 +370,8 @@
                     </div>
                     <div class="col-lg-8  d-none" id="show_seat">
                       <h5 class="ui dividing header">자리 선택</h5>
-
                       <div class="">
-
-
-
-
                         <div class="tab-content" id="v-pills-tabContent">
-
                           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab">
                             <img src="images/floors/1.jpg">
@@ -425,12 +387,8 @@
                             <a class="ui red empty circular label"></a> 이용 불가
                             <a class="ui gray empty circular label"></a> 마감 예정
                             <a class="ui empty circular label" style="background-color: var(--sub-color);"></a> 이용 중
-
-
                             <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group"
                               id="s-radio">
-
-
                               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
                                 value='1'>
                               <label class="btn btn-outline-dark mr-3" for="btnradio1"> 1</label>
@@ -463,17 +421,12 @@
                                 value='8'>
                               <label class="btn btn-outline-dark mr-3" for="btnradio8">8</label>
 
-                              <!-- if reserved => Replace class name : danget -->
+                              <!-- if reserved => Replace class name : "btn-outline-danger" -->
                               <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off"
                                 value='9'>
                               <label class="btn btn-outline-danger mr-3 disabled" for="btnradio9">9</label>
-
                             </div>
-
                             <p> 이용가능: 고정석 3 / 다인석 3 / 스터디룸 6인실</p>
-
-
-
                           </div>
                         </div>
 
@@ -482,7 +435,6 @@
                             <a class="item" id="v-pills-profile-tab" data-bs-toggle="pill"
                               data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
                               aria-selected="false">1층</a>
-
                           </li>
                           <li class="nav-item" role="presentation">
                             <a class="item" id="v-pills-messages-tab" data-bs-toggle="pill"
@@ -494,12 +446,7 @@
                               data-bs-target="#v-pills-settings" type="button" role="tab"
                               aria-controls="v-pills-settings" aria-selected="false">3층</a>
                           </li>
-
                         </ul>
-
-
-
-
                       </div>
                     </div>
                   </div>
@@ -513,8 +460,6 @@
           </div>
         </div>
 
-
-
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
           <div id="times" class="">
             <button class="ui  tertiary button" onclick="select_times($(this).attr('id'))" id="20시간">
@@ -522,13 +467,10 @@
               <span class="fw-normal"> 28,000원 </span>
               <span class="fw-light ui small text"> 유효기간 90일 </span>
             </button>
-
             <button class="ui  tertiary button" onclick="select_times($(this).attr('id'))" id="30시간">
-
               <span class="badge bg-primary text-wrap ui black label fw-bold">30시간</span>
               <span class="fw-normal"> 28,000원 </span>
               <span class="fw-light ui small text"> 유효기간 90일 </span>
-
             </button>
             <button class="ui tertiary button" onclick="select_times($(this).attr('id'))" id="40시간">
               <span class="badge bg-primary text-wrap ui black label fw-bold">40시간</span>
@@ -536,35 +478,28 @@
               <span class="fw-light ui small text"> 유효기간 90일 </span>
             </button>
           </div>
-
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-
           <div id="days" class="">
             <button class="ui  tertiary button" onclick="select_days($(this).attr('id'))" id="1일">
               <span class="badge bg-primary text-wrap ui black label fw-bold">종일권 (하루)</span>
               <span class="fw-normal"> 10,000원 </span>
               <span class="fw-light ui small text"> </span>
             </button>
-
             <button class="ui  tertiary button" onclick="select_days($(this).attr('id'))" id="14일">
-
               <span class="badge bg-primary text-wrap ui black label fw-bold">2주 (14일)</span>
               <span class="fw-normal"> 63,000원 </span>
             </button>
             <button class="ui  tertiary button" onclick="select_days($(this).attr('id'))" id="28일">
               <span class="badge bg-primary text-wrap ui black label fw-bold">4주 (28일)</span>
               <span class="fw-normal"> 120,000원 </span>
-
             </button>
           </div>
 
         </div>
         <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
           <div class="row">
-            <!-- <div class=""> -->
-
-            <div class="col-lg-2">
+             <div class="col-lg-2">
               <div class="nav flex-column nav-pills me-3" id="a-pills-tab" role="tablist" aria-orientation="vertical">
                 <button class="nav-link active ui basic button" id="a-pills-home-tab" data-bs-toggle="pill"
                   data-bs-target="#a-pills-home" type="button" role="tab" aria-controls="a-pills-home"
@@ -572,7 +507,6 @@
                 <button class="nav-link ui basic button" id="a-pills-profile-tab" data-bs-toggle="pill"
                   data-bs-target="#a-pills-profile" type="button" role="tab" aria-controls="a-pills-profile"
                   aria-selected="false">큰 사물함</buttona>
-
               </div>
             </div>
             <div class="tab-content col-lg-10" id="a-pills-tabContent">
@@ -585,27 +519,21 @@
                       id="2주">2주</button>
                     <button class="ui  tertiary button" onclick="select_weeks_locker($(this).attr('id'))"
                       id="4주">4주</button>
-
                   </div>
-
                   <div class="col-lg-4 second_column d-none" id="locker-cal">
                     <div id="show_cal" class="">
                       <h5 class="ui dividing header">이용 날짜</h5>
                       <input type="text" id="calendar-range" class="calendars">
                     </div>
                   </div>
-
                   <div class="col-lg-6 d-none" id="show_locker">
                     <h5 class="ui dividing header">사물함 선택</h5>
-
                     <div class="ui segment">
                       <a class="ui black empty circular label"></a> 이용 가능
-                      <a class="ui empty circular label"style = "background-color: var(--sub-color);"></a> 이용 중
-                      <a class="ui gray empty circular label" ></a> 마감 예정
-                      <a class="ui empty circular label" style = "background-color: var(--text-color);"></a> 예약
+                      <a class="ui empty circular label" style="background-color: var(--sub-color);"></a> 이용 중
+                      <a class="ui gray empty circular label"></a> 마감 예정
+                      <a class="ui empty circular label" style="background-color: var(--text-color);"></a> 예약
                       <a class="ui red empty circular label"></a> 이용 불가
-
-
                       <div class="btn-group-lg mt-3" role="group" aria-label="Basic radio toggle button group"
                         id="l-radio">
                         <input type="radio" class="btn-check" name="locker-radio" id="l1" autocomplete="off" value="1">
@@ -616,7 +544,6 @@
 
                         <input type="radio" class="btn-check" name="locker-radio" id="l3" autocomplete="off" value='3'>
                         <label class="btn btn-outline-dark mr-3" for="l3">3</label>
-
                       </div>
                     </div>
                   </div>
@@ -624,24 +551,19 @@
               </div>
               <div class="tab-pane fade" id="a-pills-profile" role="tabpanel" aria-labelledby="a-pills-profile-tab">💦💦
               </div>
-
             </div>
           </div>
         </div>
-
-
-
 
         <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab"><i
             class="headphones icon"></i>
         </div>
       </div>
       <div class="ui black segment my-5 full-width d-none" id="pay-box">
-
         <div class="pays">
           <h1 class="ui header">결제</h1>
           <div id="pay-detail-s" class="pay">
-            <span id="select_first" class="category c-text fs-5"></span>
+            <span id="select_seat" class="category c-text fs-5"></span>
             <span id="_seat" class="category c-text fs-5">&nbsp;</span>
             <span id="select_hour" class="duration fw-bold"></span> &nbsp;
             <span id="select_date" class="fw-light text-secondary"></span>
@@ -650,12 +572,10 @@
             <span id="total" class="fs-5 fst-italic d-none">3000원</span>
           </div>
           <!-- times package -->
-
           <table class="table d-none col-lg-4 pay w-100" id="_times">
             <colgroup>
               <col span="1" style="width: 50%;">
               <col span="1" style="width: 50%;">
-
             </colgroup>
             <thead>
               <tr>
@@ -673,7 +593,6 @@
                 <td scope="col" class="text-right" id=>333원</td>
               </tr>
             </tbody>
-
           </table>
 
           <table class="table d-none col-lg-4" id="_days_t">
@@ -717,7 +636,6 @@
             <div class="ui basic button col" tabindex="0">
               💶계좌이체
             </div>
-
             <div class="ui basic button col">
               <i class="credit card icon"></i>
               신용카드
@@ -727,16 +645,13 @@
       </div>
   </main>
 
-
-
   <footer class="ui inverted vertical footer segment footer mt-auto py-3" id="myfooter">
     <div class="ui container">
       <div class="row text-center">
         <div class="container-fluid">
           <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
-          | <a href="www.jaview.ga" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
-          | <a href="www.jaview.ga"><small class="text-light">DESIGNED BY JAVIEW</small></a>
-
+          | <a href="#" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
+          | <a href="http://www.jaview.ga/"><small class="text-light">DESIGNED BY JAVIEW</small></a>
         </div>
       </div>
     </div>
@@ -749,9 +664,11 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-  <!-- Kakao Map -->
 
-  <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d9023b7fdde1125047074283e2b4ddf8"></script>
+
+  <!-- Kakao Map : 앱키 바꿔주세요-->
+
+  <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=앱키"></script>
   <script>
     var container = document.getElementById('map');
     var options = {
@@ -764,11 +681,10 @@
 
   </script> -->
 
-
   <script src="./script.js"></script>
+
+  <!-- Index에만 쓰이는 Index용 js -->
   <script>
-
-
     $("#calendar-oneday").change(function () {
       document.getElementById("select_date").textContent = $('#calendar-oneday').val();
       document.getElementById("show_hour").classList.remove("d-none");
@@ -779,22 +695,14 @@
       document.getElementById("show_locker").classList.remove("d-none");
     });
 
-
-
     flatpickr('#calendar-range', {
       "mode": "range",
       "locale": "ko",
       minDate: "today",
-      inline: true,
-      // onClose: function (selectedDates, dateStr, instance) {
-      //   let daysInRange = document.getElementsByClassName('inRange');
-      //   let daysLengthTotal = daysInRange.length + 1;
-      //   document.getElementById("_duration").textContentdaysLengthTotal;
-      // }
+      inline: true,    
     });
 
     flatpickr.localize(flatpickr.l10ns.ko);
-
 
     flatpickr('#calendar-oneday', {
       minDate: "today",
@@ -803,12 +711,9 @@
       enableTime: true,
       dateFormat: "Y-m-d H:i",
       defaultDate: "today",
-      onChange: function (dateObj) {
-        // document.getElementById("select_date").textContent = flatpickr.formatDate(dateObj, "Y-m-d")
-        // console.info(dateStr);
+      onChange: function (dateObj) {      
       }
     });
-
 
     $("#s-radio").change(function () {
       document.getElementById("_seat").textContent = $("input[type='radio'][name='btnradio']:checked").val() + '번 좌석';
@@ -816,27 +721,16 @@
       show_pay_box();
     });
 
-
     $("#l-radio").change(function () {
       document.getElementById("_locker_num").textContent = $("input[type='radio'][name='locker-radio']:checked").val() + '번';
       document.getElementById("total").classList.remove("d-none");
-
       show_pay_box();
     });
-
-    // $("#l-radio").change(function () {
-    //   document.getElementById("_time_added").textContent = $("input[type='radio'][name='times']:checked").val() ;
-    //   show_pay_box();
-
-    // });
 
     var myCarousel = document.querySelector('#myCarousel')
     var carousel = new bootstrap.Carousel(myCarousel, {
       interval: 0
     })
-
   </script>
-
 </body>
-
 </html>

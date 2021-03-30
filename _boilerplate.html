@@ -2,15 +2,18 @@
 <html class="h-100" lang="ko">
 
 <head>
+  <!-- {% include head.html %} 프레임웍에서 대체 -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="독서실">
   <meta name="author" content="스터디큐브">
   <meta name="generator" content="Jekyll v4.1.1">
+  <!-- 카카오톡 썸네일 내용~ -->
   <meta property="og:title" content="스터디큐브 독서실">
   <meta property="og:description" content="집중이 잘 되는 시간">
   <meta property="og:image" content="images/thumbnail.png">
-  <title>스터디큐브 독서실 예약</title>
+  <!-- end 카카오톡 썸네일 내용 끝-->
+  <title>{{title 타이틀 백에서 넘겨오세요}}</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -32,14 +35,11 @@
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 
-  <!-- 애플지도 -->
-  <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
-
 
   <!-- favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.png">
-  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
@@ -58,46 +58,49 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- AOS -->
+  <!-- AOS for fadein/fade out effect in join.html page-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- 독서실 스타일-->
   <link rel="stylesheet" href="./style.css">
 </head>
 
-
 <body class="d-flex flex-column h-100 ">
   <header class="mb-4">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed menu" aria-label="Eighth navbar example">
-      <div class="container">
-        <a class="navbar-brand mx-auto" href="index.html">
-          <img src="images/logo.png" style="height:2.5rem;">
+    <nav class="navbar navbar-expand-sm navbar-dark ui fixed menu " aria-label="studycube navbar" id="mynav">
+      <div class="container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" class="logo" style="height:2.5rem;">
         </a>
-        <!-- <button class="navbar-toggler collapsed d-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>     -->
-        <div class="navbar-collapse collapse" id="navbarsExample07">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <div class="" id="navbarsExample07">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="qrcode icon"></i>스마트키</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="list alternate outline icon"></i>이용 내역
+              <a class="nav-link active" aria-current="page" href="smartkey.html"><i class="qrcode icon mr-0 pr-0"></i>
+                <div class="ui teal circular mini label" style="background-color: var(--sub-color) !important;">2</div>
+                스마트키
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="myhistory.html"><i
+                  class="list alternate outline icon"></i>이용 내역
+              </a>
+            </li>
+
+            <!-- 로그인했을 때 -->
 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
             </li>
 
+            <!-- 로그인 안되어 있을 때 -->
 
-            <li class="nav-item  dropdown">
+            <!-- <li class="nav-item  dropdown">
               <a class="nav-link active dropdown-toggle text-gray-e" data-bs-toggle="dropdown" aria-expanded="false"
                 href="#">
                 로그인
               </a>
               <ul class="dropdown-menu dropdown-menu-end justify-content-center text-center full-width"
-                style="right: 0 !important;width: 24rem;">
+                style="right: 0 !important;width: 21rem;">
 
                 <form class="ui form my-3 mx-3">
                   <div class="field">
@@ -111,7 +114,6 @@
 
                   <button class="ui fluid large submit button" type="submit"
                     style="border-top: 2px solid var(--main-color);">로그인</button> <br>
-
                   <div class="ul list text-center"
                     style="margin:auto; line-height: 2rem; padding-top:1rem; border-top: 1px solid  #e9e9e9">
                     <a href="./join.html">회원 가입</a><br>
@@ -119,60 +121,40 @@
                   </div>
                 </form>
               </ul>
-            </li>
+            </li> -->
           </ul>
-
         </div>
       </div>
     </nav>
   </header>
-
   <main role="main" class="flex-shrink-0 mt-4 pt-4">
     <div class="container">
 
 
 
 
-
-
-
+      <!-- 내용 -->
 
 
 
 
     </div>
-
-
   </main>
 
-
-  <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top ">
-    <div class="row mt-4">
-      <div class="col">
-        <i class="coffee icon"></i>
-      </div>
-      <div class="col">
-        <i class="list alternate outline icon"></i>
-      </div>
-      <div class="col">
-        <i class="user outline icon"></i>
-      </div>
-      <div class="col">
-        <i class="qrcode icon"></i>
-      </div>
-    </div>
-
-  </nav>
-
-  <footer class="ui inverted vertical footer segment footer mt-auto py-3 d-none d-sm-block">
+  <!-- {% include footer.html %} -->
+  <footer class="ui inverted vertical footer segment footer mt-auto py-3" id="myfooter">
     <div class="ui container">
       <div class="row text-center">
         <div class="container-fluid">
           <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
+          | <a href="#" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
+          | <a href="http://www.jaview.ga/"><small class="text-light">DESIGNED BY JAVIEW</small></a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- 각 페이지용 js 추가 -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

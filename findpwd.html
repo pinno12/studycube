@@ -1,109 +1,115 @@
 <!DOCTYPE html>
 <html class="h-100" lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="독서실">
-        <meta name="author" content="스터디큐브">
-        <meta name="generator" content="Jekyll v4.1.1">
-        <meta property="og:title" content="스터디큐브 독서실">
-        <meta property="og:description" content="집중이 잘 되는 시간">
-        <meta property="og:image" content="images/thumbnail.png">
-        <title>스터디큐브 독서실 예약</title>
-    
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&amp;family=Noto+Sans+KR:wght@100;400;700&amp;display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-     
-        <!-- 애플지도 -->
-        <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
-        
 
-        <!-- favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    
-        <!-- AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-        <!-- 독서실 스타일-->
-        <link rel="stylesheet" href="./style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="독서실">
+  <meta name="author" content="스터디큐브">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <!-- 카카오톡 썸네일 내용~ -->
+  <meta property="og:title" content="스터디큐브 독서실">
+  <meta property="og:description" content="집중이 잘 되는 시간">
+  <meta property="og:image" content="images/thumbnail.png">
+  <!-- end 카카오톡 썸네일 내용 끝-->
+  <title>스터디큐브 독서실 예약</title>
 
-        <style>
-            
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200&amp;family=Noto+Sans+KR:wght@100;400;700&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-body {
-  display: flex;
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 
-  padding-top: 40px;
+  
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-  background-color: #f5f5f5;
-}
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-.form-signin {
-  width: 100%;
-  max-width: 30rem;
-  padding: 15px;
-  margin: auto;
-}
-.form-signin .checkbox {
-  font-weight: 400;
-}
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
+  <!-- 독서실 스타일-->
+  <link rel="stylesheet" href="./style.css">
 
-    </style>
+  <!-- Only used/specialized in this page -->
+  <style>
+    body {
+      display: flex;
 
-    </head>
-    
+      padding-top: 40px;
+
+      background-color: #f5f5f5;
+    }
+
+    .form-signin {
+      width: 100%;
+      max-width: 30rem;
+      padding: 15px;
+      margin: auto;
+    }
+
+    .form-signin .checkbox {
+      font-weight: 400;
+    }
+
+    .form-signin .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .form-signin .form-control:focus {
+      z-index: 2;
+    }
+
+    .form-signin input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  </style>
+</head>
+
 
 <body class="d-flex flex-column h-100 ">
   <header class="mb-4">
@@ -112,8 +118,6 @@ body {
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" class="logo" style="height:2.5rem;">
         </a>
-
-
         <div class="" id="navbarsExample07">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
@@ -121,7 +125,6 @@ body {
                 <div class="ui teal circular mini label" style="background-color: var(--sub-color) !important;">2</div>
                 스마트키
               </a>
-
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="myhistory.html"><i
@@ -170,62 +173,37 @@ body {
     </nav>
   </header>
 
-     
-
-
-<!-- <main role="main" class="flex-shrink-0 mt-4 pt-4"> -->
-    
-      <main role="main" class="flex-shrink-0 my-auto">
-        <div class="form-signin">
-            <form>
-            <div class = "bg-white" style = "border:3rem solid white;">
-              <h1 class="h3 mb-3 fw-normal">비밀번호를 잊어버렸나요?</h1>
-              <label for="inputEmail" class="visually-hidden fw-bold">이메일 <span class = "fw-light">이메일 아이디를 입력해주세요.</span></label>
-              <input type="email" id="inputEmail" class="form-control" placeholder="이메일 주소" required="" autofocus="">
-            </div>
-              <button class="w-100 btn btn-lg ui button mt-5 bg-m" type="submit">비밀번호 재설정</button>
-            </form>
-        </div>        
-      </main>
-   
-    
-    <!-- </main> -->
-
-
-    <nav class="mobile-nav d-block d-sm-none shadow-sm bg-dark rounded border-top">
-      <div class="row mt-4">
-        <div class="col">
-          <a href="index.html" class="text-white"><i class="coffee icon"></i></a>
+  <main role="main" class="flex-shrink-0 my-auto">
+    <div class="form-signin">
+      <form>
+        <div class="bg-white" style="border:3rem solid white;">
+          <h1 class="h3 mb-3 fw-normal">비밀번호를 잊어버렸나요?</h1>
+          <label for="inputEmail" class="visually-hidden fw-bold">이메일 <span class="fw-light">이메일 아이디를
+              입력해주세요.</span></label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="이메일 주소" required="" autofocus="">
         </div>
-        <div class="col">
-          <a href="myhistory.html" class="text-white"><i class="list alternate outline icon"></i></a>
-        </div>
-        <div class="col">
-          <a href="join.html" class="text-white"><i class="user outline icon"></i></a>
-        </div>
-        <div class="col">
-          <a href="smartkey.html" class="text-white"><i class="qrcode icon"></i></a>
-          <div class="left floating ui mini teal label" style="left:auto; right:3vw;">5</div>
+        <button class="w-100 btn btn-lg ui button mt-5 bg-m" type="submit">비밀번호 재설정</button>
+      </form>
+    </div>
+  </main>
+
+
+  <footer class="ui inverted vertical footer segment footer mt-auto py-3" id="myfooter">
+    <div class="ui container">
+      <div class="row text-center">
+        <div class="container-fluid">
+          <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
+          | <a href="www.jaview.ga" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
+          | <a href="www.jaview.ga"><small class="text-light">DESIGNED BY JAVIEW</small></a>
+
         </div>
       </div>
-    </nav>
+    </div>
+  </footer>
+  <!-- Kakao Map -->
 
-    <footer class="ui inverted vertical footer segment footer mt-auto py-3" id="myfooter">
-      <div class="ui container">
-        <div class="row text-center">
-          <div class="container-fluid">
-            <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
-            | <a href="www.jaview.ga" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
-            | <a href="www.jaview.ga"><small class="text-light">DESIGNED BY JAVIEW</small></a>
-  
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Kakao Map -->
-   
-    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d9023b7fdde1125047074283e2b4ddf8"></script> -->
-    <!-- <script>
+  <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d9023b7fdde1125047074283e2b4ddf8"></script> -->
+  <!-- <script>
         var container = document.getElementById('map');
         var options = {
           center: new kakao.maps.LatLng(33.450701, 126.570667),
@@ -236,10 +214,11 @@ body {
         
         
             </script> -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./script.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

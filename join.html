@@ -75,8 +75,6 @@
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" class="logo" style="height:2.5rem;">
         </a>
-
-
         <div class="" id="navbarsExample07">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
@@ -84,7 +82,6 @@
                 <div class="ui teal circular mini label" style="background-color: var(--sub-color) !important;">2</div>
                 스마트키
               </a>
-
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="myhistory.html"><i
@@ -93,27 +90,25 @@
             </li>
 
             <!-- If session login -->
-
             <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><i class="user outline icon"></i>박청이</a>
             </li> -->
 
-               <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./login.html"><i class="user outline icon"></i>로그인</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./login.html"><i
+                  class="user outline icon"></i>로그인</a>
             </li>
-       
           </ul>
-
         </div>
       </div>
     </nav>
   </header>
+
   <main role="main" class="flex-shrink-0 mt-4 pt-4">
     <div class="container  mb-5 pb-5">
-
       <div class="mt-1 row justify-content-md-end ">
         <div class="row row justify-content-md-end">
-          <div class=" col-lg-6" >
+          <div class="col-lg-6">
             <h1 class="ui header ">
               회원가입
             </h1>
@@ -121,48 +116,41 @@
           </div>
         </div>
         <div class="mt-1 row justify-content-md-end ">
+          
+          <!-- 독서실 이름 변경 -->
           <div class=" col-lg-6 text-center fw-bold fs-1 align-middle my-auto" data-aos="fade-right">
             스 터 디 큐 브
           </div>
           <div class=" col-lg-6 my-auto" data-aos="fade-left">
             <form class="needs-validation" novalidate>
-
-
               <div class="form-group row">
-                <!-- <div class="row mb-3"> -->
                 <!-- 핸드폰 입력했을 때 자동으로 중복 확인 -->
-
                 <label for="validationCustom01" class="col-sm-4 col-form-label">핸드폰 번호</label>
                 <div class="input-group">
-               
                   <input type="tel" class="form-control col-7 col-lg-6" id="validationCustom01" placeholder="핸드폰번호*"
-                    pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010" required maxlength="14" onKeyup='addDashes(this)' />
-                
-                  <button class="btn btn-outline-secondary col-5 col-lg-2" type="button" id="" onclick= "confirm_kakao_msg()">인증합니다</button>
+                    pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010" required maxlength="14"
+                    onKeyup='addDashes(this)' />
+                  <button class="btn btn-outline-secondary col-5 col-lg-2" type="button" id=""
+                    onclick="confirm_kakao_msg()">인증합니다</button>
                   <div class="invalid-feedback">
                     번호를 입력해 주세요.
-                </div>
-               
-                </div>
-                <!-- </div> -->
+                  </div>
+                </div>          
               </div>
-
-              <small class = "d-none" id="confirm_msg">인증번호를 카카오톡으로 전송했습니다. 확인해주세요.</small>
-
-
+              <small class="d-none" id="confirm_msg">인증번호를 카카오톡으로 전송했습니다. 확인해주세요.</small>
               <div class="form-group row">
                 <label for="validationCustom01" class="col-sm-4 col-form-label">비밀번호*</label>
                 <div class="col-sm-8">
-                  <input type="password" class="form-control" id="validationCustom01" placeholder="숫자 6자리" maxlength="6" required />
+                  <input type="password" class="form-control" id="validationCustom01" placeholder="숫자 6자리" maxlength="6"
+                    required />
                 </div>
               </div>
               <div class="form-group row">
                 <label for="pw" class="col-sm-4 col-form-label">비밀번호 다시 입력*</label>
                 <div class="col-sm-8">
-                  <input type="password" class="form-control" id="validationCustom01" required maxlength="6"/>
+                  <input type="password" class="form-control" id="validationCustom01" required maxlength="6" />
                 </div>
               </div>
-
               <div class="form-group row">
                 <label for="validationCustom01" class="col-sm-4 col-form-label">이름</label>
                 <div class="col-sm-8">
@@ -180,15 +168,12 @@
                   <div class="invalid-feedback">
                     생년월일 6자리로 입력해주세요
                   </div>
-
                 </div>
               </div>
-
 
               <div class="form-group row">
                 <label for="validationCustom01" class="col-sm-4 col-form-label">성별</label>
                 <div class="col-sm-8">
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                       value="option1">
@@ -202,14 +187,11 @@
                 </div>
               </div>
 
-
-
               <div class="form-floating mb-3">
                 <input type="tel" class="form-control col-8" id="floating-parent" placeholder="01088883333"
-                pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010" required maxlength="11"/>
-                <label for="floating-parent" value = '010' onKeyup='addDashes(this)' />보호자 핸드폰 번호</label>
+                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010" required maxlength="11" />
+                <label for="floating-parent" value='010' onKeyup='addDashes(this)' >보호자 핸드폰 번호</label>
               </div>
-              
 
               <div class="ui checkbox" style="display: block;">
                 <input type="checkbox" name="example" checked>
@@ -218,10 +200,8 @@
                   <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     [자세히 보기]
                   </a>
-
                 </label>
               </div>
-
 
               <div class="ui checkbox" style="display: block;">
                 <input type="checkbox" name="example" checked>
@@ -231,8 +211,7 @@
                   </a>
                 </label>
               </div>
-
-              <button class="ui button mt-4 bg-e"  type="submit">
+              <button class="ui button mt-4 bg-e" type="submit">
                 회원가입
               </button>
             </form>
@@ -246,6 +225,9 @@
                   <h5 class="modal-title" id="exampleModalLabel">서비스 이용약관</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+                <!-- 엔터 처리 <br />로 부탁드립니다 -->
+
                 <div class="modal-body">
                   제 1 장 총칙
 
@@ -512,13 +494,9 @@
 
                   2. 회사와 회원간의 분쟁에 관한 소송은 회사의 본점 소재지를 관할하는 법원 또는 민사소송법 상의 관할법원에 제소합니다.
 
-
-
-
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인했어요</button>
                 </div>
               </div>
             </div>
@@ -569,28 +547,15 @@
                    
                   개인정보 책임자: 주)투비스마트 강도훈부장
                   이메일: kangdo@tobesmart.co.kr
-                   
-                   
-                   
-                   
-
-
-
+               
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인했어요</button>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-
-
-
-
-
   </main>
 
 
@@ -599,17 +564,17 @@
       <div class="row text-center">
         <div class="container-fluid">
           <small>(주)스터디큐브 | 서울시 성북구 장한평로 333-3 3층 | 전화: 010-3331-5555 | 대표: 디큐브 </small>
-          | <a href="www.jaview.ga" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
-          | <a href="www.jaview.ga"><small class="text-light">DESIGNED BY JAVIEW</small></a>
-
+          | <a href="#" class="text-left"><small class="text-light">HOSTED BY TOBESMART</small></a>
+          | <a href="http://www.jaview.ga/"><small class="text-light">DESIGNED BY JAVIEW</small></a>
         </div>
       </div>
     </div>
   </footer>
-  <!-- Only join -->
+
+  <!-- Only for join script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
+  <script>
     AOS.init();
     (function () {
       'use strict';
@@ -628,10 +593,8 @@
         });
       }, false);
     })();
-
-  
   </script>
-
+<!-- End Only for join script -->
 
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
