@@ -1,4 +1,5 @@
-Showcase: pinno12.github.io/studcube/  
+Showcase: 
+https://pinno12.github.io/studcube/  
 
 Studycube_Web  
 ┠ index 홈 (첫 화면) 예약 가능  
