@@ -1,8 +1,8 @@
 Studycube_Web  
-┠── index 홈 (첫 화면) 예약 가능  
-┠── myhistory 이용 내역  
-┠── smartkey 스마트키  
-┠── login 로그인    
+┠ index 홈 (첫 화면) 예약 가능  ┠
+┠ myhistory 이용 내역  
+┠ smartkey 스마트키  
+┠ login 로그인    
   └── join 가입하기  
   └── findpwd 비밀번호 찾기  
 ┠── script.js: 맞춤형 js
