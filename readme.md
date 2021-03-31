@@ -3,8 +3,8 @@ Studycube_Web
 ┠ myhistory 이용 내역  
 ┠ smartkey 스마트키  
 ┠ login 로그인    
-  └── join 가입하기  
-  └── findpwd 비밀번호 찾기  
+   └ join 가입하기  
+   └ findpwd 비밀번호 찾기  
 ┠ script.js: 맞춤형 js
 ┠ style.css: 스터디큐브 웹 맞춤형 css
 
