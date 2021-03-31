@@ -129,7 +129,7 @@
                 <div class="input-group">
                   <input type="tel" class="form-control col-7 col-lg-6" id="validationCustom01" placeholder="핸드폰번호*"
                     pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010" required maxlength="14"
-                    onKeyup='addDashes(this)' />
+                    onkeyup="addDashes(this)" />
                   <button class="btn btn-outline-secondary col-5 col-lg-2" type="button" id=""
                     onclick="confirm_kakao_msg()">인증합니다</button>
                   <div class="invalid-feedback">
@@ -141,20 +141,20 @@
               <div class="form-group row">
                 <label for="validationCustom01" class="col-sm-4 col-form-label">비밀번호*</label>
                 <div class="col-sm-8">
-                  <input type="password" class="form-control" id="validationCustom01" placeholder="숫자 6자리" maxlength="6"
+                  <input type="password" class="form-control" id="validationCustom07" placeholder="숫자 6자리" maxlength="6"
                     required />
                 </div>
               </div>
               <div class="form-group row">
                 <label for="pw" class="col-sm-4 col-form-label">비밀번호 다시 입력*</label>
                 <div class="col-sm-8">
-                  <input type="password" class="form-control" id="validationCustom01" required maxlength="6" />
+                  <input type="password" class="form-control" id="validationCustom02" required maxlength="6" />
                 </div>
               </div>
               <div class="form-group row">
                 <label for="validationCustom01" class="col-sm-4 col-form-label">이름</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="이름" required />
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="이름" required />
                   <div class="invalid-feedback">
                     회원님의 존함을 입력해주세요.
                   </div>
@@ -164,7 +164,7 @@
               <div class="form-group row">
                 <label for="validationCustom01" class="col-sm-4 col-form-label" maxlength="6">생년월일</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="980819" required />
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="980819" required />
                   <div class="invalid-feedback">
                     생년월일 6자리로 입력해주세요
                   </div>
@@ -190,7 +190,7 @@
               <div class="form-floating mb-3">
                 <input type="tel" class="form-control col-8" id="floating-parent" placeholder="01088883333"
                   pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010" required maxlength="11" />
-                <label for="floating-parent" value='010' onKeyup='addDashes(this)' >보호자 핸드폰 번호</label>
+                <label for="floating-parent" value="010" onkeyup="addDashes(this)" >보호자 핸드폰 번호</label>
               </div>
 
               <div class="ui checkbox" style="display: block;">
@@ -556,6 +556,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </main>
 
 
@@ -601,5 +603,4 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
